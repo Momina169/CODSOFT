@@ -12,9 +12,9 @@
         data-bs-target="#userModal">Add Doctor</button>
 
     <!-- Add user Modal -->
-    <div class="modal fade" id="userModal" tabindex="-1">
+    <div class="modal fade" id="userModal"  tabindex="-1">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content ">
                 <div class="modal-header">
                     <h5 class="modal-title fs-3 text-info">Add Doctor</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -67,9 +67,9 @@
                             </div>
 
                             <!-- departments -->
-                            <div class="col-4 ">
+                            <div class="col-6">
                                 <label for="deppartments_id">Department</label>
-                                <select name="deppartments_id" id="deppartments_id">
+                                <select class="px-0" name="deppartments_id" id="deppartments_id">
                                     @foreach ($departments as $dep)
                                         <option  name="deppartments_id"  value="{{$dep->id}}">
                                             {{ $dep->DepartmentName }}</option>

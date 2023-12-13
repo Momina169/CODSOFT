@@ -14,10 +14,9 @@
               <div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
                 <h5 class="text-info my-2">Quick Links</h5>
                 <ul class="footer-links list-unstyled">
-                  <li><a class="text-decoration-none text-light" href="labs.html">Our labs</a></li>
-                  <li><a class="text-decoration-none text-light" href="surgries.html">Our surgeries</a></li>
-                  <li><a class="text-decoration-none text-light" href="nurses.html">Our nurses</a></li>
-                  <li><a class="text-decoration-none text-light" href="lab-attendend.html">Our sweepers</a></li>
+                  <li><a class="text-decoration-none text-light" href="{{route('index')}}">Home</a></li>
+                  <li><a class="text-decoration-none text-light" href="{{route('surgries')}}">Our Surgeries</a></li>
+                  <li><a class="text-decoration-none text-light" href="{{route('nurses')}}">Our Nurses</a></li>
       
                 </ul>
               </div>

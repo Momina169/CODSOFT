@@ -9,11 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="{{asset('/css_bootstrap.min.css')}}">
    
+    <link rel="stylesheet" href="{{asset('/style.css')}}">
+
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <link rel="stylesheet" href="assets/index_style.css">
     </head>
 <body>
  @include('layouts.header') 

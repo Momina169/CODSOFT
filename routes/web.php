@@ -56,15 +56,11 @@ Route::get('/vision', function () {
 })->middleware(['auth', 'verified']);
 
 
-Route::get('/zulfiqar', function () {
-    return view('zulfiqar');
-})->middleware(['auth', 'verified']);
-
-Route::view('/contact2','contact2')->middleware(['auth', 'verified'])->name('contact2');
+Route::view('/contact','contact')->middleware(['auth', 'verified'])->name('contact');
 Route::view('/doctors','doctors')->middleware(['auth', 'verified'])->name('doctors');
 Route::view('/find doctors','find doctor')->middleware(['auth', 'verified'])->name('find doctor');
 Route::view('/firstlearnmore','firstlearnmore')->middleware(['auth', 'verified'])->name('firstlearnmore');
-Route::view('/lab-attendend','lab-attendend')->middleware(['auth', 'verified'])->name('lab-attendend');
+Route::view('/sweepers','sweepers')->middleware(['auth', 'verified'])->name('sweepers');
 Route::view('/labs','labs')->middleware(['auth', 'verified'])->name('labs');
 Route::view('/mission','mission')->middleware(['auth', 'verified'])->name('mission');
 Route::view('/vision','vision')->middleware(['auth', 'verified'])->name('vision');
@@ -72,7 +68,6 @@ Route::view('/nurses','nurses')->middleware(['auth', 'verified'])->name('nurses'
 Route::view('/opd','opd')->middleware(['auth', 'verified'])->name('opd');
 Route::view('/surgries','surgries')->middleware(['auth', 'verified'])->name('surgries');
 Route::view('/welcome','welcome')->middleware(['auth', 'verified'])->name('welcome');
-Route::view('/zulfiqar','zulfiqar')->middleware(['auth', 'verified'])->name('zulfiqar');
 
 
 
@@ -120,7 +115,7 @@ Route::get('/detail/{id}',[AppointmentController::class,'detail'])->middleware([
 Route::get('/get-deppartment-breakdown-staff',[AppointmentController::class,'getStaffDeppartment']);
 Route::get('/get-doctor-breakdown',[AppointmentController::class,'getDoctorBreakdown']);
   
-// routes/web.php
+
 Route::get('/appoint/create', [AppointmentController::class,'checkEmailValidity']);
 
 //============ Staff Routes ===========

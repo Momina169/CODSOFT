@@ -71,7 +71,7 @@
                                 <hr class="dropdown-divider">
                             </li>
 
-                            <li><a class="dropdown-item" href="{{route('lab-attendend')}}">Sweepers</a></li>
+                            <li><a class="dropdown-item" href="{{route('sweepers')}}">Sweepers</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -94,7 +94,9 @@
                         </ul>
                     </li>
 
-
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="{{route('contact')}}">Contact us</a>
+    </li>
 
                     <li class=" nav-item  dropdown">
                         <a class="nav-link dropdown-toggle py-0 px-2 btn " href="#" role="button"
@@ -103,7 +105,7 @@
                             </div>
                             <div class="font-medium text-sm text-gray-500 " hidden>{{ Auth::user()->email }}</div>
                         </a>
-
+                       
 
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item ms-2 " href="{{route('profile.edit')}}">Profile'</a></li>

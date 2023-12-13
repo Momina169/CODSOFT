@@ -72,7 +72,7 @@
                                     <svg class="bi me-2" width="16" height="16">
                                         <use xlink:href="#speedometer2" />
                                     </svg>
-                                    Appointment
+                                    Appointments
                                 </a>
                             </li>
                             <li class="nav-item">
