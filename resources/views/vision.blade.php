@@ -1,15 +1,15 @@
 
     @extends('layouts._layout')
     @section('content')
-    <div><h1 class="text-center my-4 fs-1 ps-5"><b>MEDICAL HAVEN</b></h1><br>
-        <h2 class="text-center my-4 mission-heading fs-2" style="color: #ff9001;">OUR VISION</h2></div>
+    <div>
+        <h1 class="text-center my-4 mission-heading fs-1" style="color: brown;">OUR VISION</h1></div>
         <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-12 animated">
                     <div class="card">
                         <div class="row no-gutters c1">
                             <div class="col-md-4">
-                                <img src="images/istockphoto-1187071499-612x612.jpeg" alt="Small Picture" class="card-img">
+                                <img src="{{asset('/images/55.jpg')}}" alt="Small Picture" class="card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -50,7 +50,7 @@
                     <div class="card">
                         <div class="row no-gutters c1">
                             <div class="col-md-4">
-                                <img src="images/istockphoto-1189304032-612x612.jpeg" alt="Small Picture" class="card-img" height="260px">
+                                <img src="{{asset('/images/58.jpg')}}" alt="Small Picture" class="card-img" height="260px">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -69,7 +69,7 @@
                     <div class="card">
                         <div class="row no-gutters c2">
                             <div class="col-md-4">
-                                <img src="images/istockphoto-1332593114-612x612.jpeg" alt="Small Picture" class="card-img">
+                                <img src="{{asset('/images/empowerment.jpeg')}}" alt="Small Picture" class="card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">

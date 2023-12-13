@@ -27,7 +27,7 @@
 <section>
     <div class="bg-pic " style="padding: 8%;">
 
-        <h1 class="text-center pt-5 fs-1"><b>Contact Us</b></h1>
+        <h1 style="color: brown;" class="text-center pt-5 fs-1"><b>Contact Us</b></h1>
 
         <p class="container ps-5 text-center"><b>We're here to assist you. Reach out to us for any queries,
                 appointments, or concerns.Use the form below</b> <br>
@@ -39,7 +39,7 @@
     <div class="container">
         <div class="row row-cols-7 row-cols-md-5 g-4">
             <div class="col-lg-7 c2 pb-5 pt-4 ps-5 pe-4">
-                <h3 class="section-subtitle"><b>Contact Form</b></h3>
+                <h3 style="color: brown;" class="section-subtitle"><b>Contact Form</b></h3>
                 <form class="contact-form">
                     <div class="form-group">
                         <label for="name">Your Name</label>
@@ -53,34 +53,38 @@
                         <label for="message mb-5">Message</label>
                         <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
                     </div>
-                    <p>By submitting this form:You agree to the processing of the submitted personal data in accordance
-                        with our Insta's Privacy Policy including the transfer of data to our Medical Haven Managers and
-                        Doctors.</p>
+                    
                     <button type="submit" class="btn" style="background-color:#00B4CC">Submit</button>
                 </form>
             </div>
 
             <div class="col-lg-4">
                 <div class="box ms-4 pb-5 ps-5 pt-5 pe-5">
-                    <ul class="social-media-list">
-                        <li><a href="#" target="_blank"><b style="color: #00B4CC;"><i class="fa fa-facebook"></b></i><b
+
+                    <ul>
+                        <li><a href="https://www.facebook.com/mominaijaz169" target="_blank"><b style="color: #00B4CC;"><i class="fa fa-facebook"></b></i><b
                                     style="color: #00B4CC;"> Facebook</b></a></li>
-                        <li><a href="#" target="_blank"><b style="color: #00B4CC;"><i class="fa fa-twitter"></b></i><b
+
+                        <li><a href="https://www.twitter.com/mominaijaz169" target="_blank"><b style="color: #00B4CC;"><i class="fa fa-twitter"></b></i><b
                                     style="color: #00B4CC;"> Twitter</b></a></li>
-                        <li><a href="#" target="_blank"><b style="color: #00B4CC;"><i class="fa fa-linkedin"></b></i><b
+
+                        <li><a href="https://www.linkedin.com/in/mominaijaz" target="_blank"><b style="color: #00B4CC;"><i class="fa fa-linkedin"></b></i><b
                                     style="color: #00B4CC;"> LinkedIn</b></a></li>
-                        <li><a href="#" target="_blank"><b style="color: #00B4CC;"><i class="fa fa-instagram"></b></i><b
+
+                        <li><a href="https://www.instagram.com/dev_momina" target="_blank"><b style="color: #00B4CC;"><i class="fa fa-instagram"></b></i><b
                                     style="color: #00B4CC;"> Instagram</b></a></li>
                     </ul>
+
                     <h6><b>Already on social media?</b></h6>
                     <p>Chat with us and get an instant reply. </p>
+
                 </div>
             </div>
         </div>
     </div>
 </section><br><br>
-<section>
 
+<section>
     <div class="container">
         <h1 class="text-center"><b style=" color: #00B4CC;">Our Location</b></h1>
         <iframe

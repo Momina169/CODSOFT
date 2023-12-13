@@ -10,7 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 60vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;

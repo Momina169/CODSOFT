@@ -1,32 +1,10 @@
 
     @extends('layouts._layout')
     @section('content')
-    <div><h1 class="text-center my-4 fs-1 ps-5"><b>MEDICAL HAVEN</b></h1><br>
-        <h2 class="text-center my-4 mission-heading fs-2" style="color: #ff9001;">OUR MISSION</h2></div>
+    <div>
+        <h1 class="text-center my-4 mission-heading fs-1" style="color: brown;">OUR MISSION</h1></div>
         <div class="container mt-5">
-            <!-- <div class="row">
-                <div class="col-lg-12 animated">
-                    <div class="card">
-                        <div class="row no-gutters c1">
-                            <div class="col-md-4">
-                                <img src="images/patient care.jpeg" alt="Small Picture" class="card-img" height="250px">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                        <h3 class="" style="width: 100%;"></h3>
-                                        <div>
-                                            <p class="mission-description ms-4"><h3 class="" >Exceptional Patient Care</h3>
-                                                <br>
-                                                <p class="mission-description">Our mission is to provide exceptional and compassionate patient care by prioritizing individual needs, offering personalized treatment plans, and maintaining the highest standards of medical excellence. </p>
-                                        </div> -->
-                                       
-                                <!-- </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                
-            <!-- </div><br><br> -->
+           
             <div class="row">
                 <div class="col-lg-12 animated">
                     <div class="card">
