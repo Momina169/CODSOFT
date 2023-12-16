@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="{{ asset('/css_bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/sidebars.css') }}">
 
+    <style>
+        .admin-sidebar{
+            max-width: 20%;
+        }
+    </style>
 </head>
 
 <body class="font-sans" >
@@ -35,7 +40,7 @@
 
     
         <div class="row" >
-            <div class="col-sm-12 col-md-3 col-lg-3 ">
+            <div class="col-sm-12 col-md-3 col-lg-3 admin-sidebar">
                 <nav class="navbar navbar-expand-lg d-flex flex-column  bg-light" style=" ">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar"
                         aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,7 +130,7 @@
 
             </div>
 
-            <div class="col-sm-12 col-md-9 col-lg-9 mt-5" style="min-width: 70%;">
+            <div class="col-sm-12 col-md-9 col-lg-9 mt-5" style="min-width: 60%;">
                 <!-- Page Content -->
 
                 {{ $slot }}

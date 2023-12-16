@@ -94,10 +94,12 @@
                 </select>
             </div>
             <div class="col-4">
-                <label for="deppartment" class="form-label">Department</label>
-                <select id="deppartment" name="deppartment" class="form-select">
-                    <option value="">Select a Department</option>
-                </select>
+            <label for="deppartment" class="form-label">Department</label>
+                    <select id="deppartment" name="deppartment" class="form-select">
+                        @foreach($deppartmentBreakdown as $dep)
+                        <option value="{{$dep->id}}" id="deppartment">{{$dep->DepartmentName}}</option>
+                        @endforeach
+                    </select>
             </div>
             <div class="col-4">
                 <label for="salary" class="form-label">Salary</label>

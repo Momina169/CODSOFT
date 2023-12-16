@@ -33,6 +33,8 @@
                             <div class="col-6">
                                 <label class="form-group" for="email">Email ID</label>
                                 <input class="form-control" type="email" name="email" placeholder="abc@gmail.com">
+                                 <p class="text-danger"> {{$errors->first('email')}}</p>
+
                             </div>
                             <div class="col-6">
 
@@ -91,7 +93,7 @@
 
                             <div class="education row">
                                 <div class="col-6">
-                                    <label class="form-group" for="educations[0][degtitle]">Degree Title:</label>
+                                    <label class="form-group" for="educations[0][degTitle]">Degree Title:</label>
                                     <input class="form-control" type="text" name="educations[0][degTitle]"
                                         placeholder="MBBS/BS/MS">
                                 </div>
@@ -164,11 +166,6 @@
                                     <input class="form-control" type="text" name="experiences[0][Location]"
                                         placeholder="Ex. Lahore, Punjab">
                                 </div>
-                                {{-- <div class="col-6">
-                                    <label class="form-group" for="experiences[0][years]">Years:</label>
-                                    <input class="form-control" type="number" name="experiences[0][years]" >
-                                </div> --}}
-
 
                             </div>
                         </div>
@@ -241,7 +238,7 @@
 
                     <td> <a href="{{ 'DetailsCrud/' . $d->id }}"><i class="fa-solid fa-circle-info"></i></a></td>
                     <td>
-                        <a href="{{ 'edit/' . $d->id }}"><i class="fa-regular fa-pen-to-square"></i></a>
+                        <!-- <a href="{{ 'edit/' . $d->id }}"><i class="fa-regular fa-pen-to-square"></i></a> -->
                         <a href="{{ 'DeleteDoctor/' . $d->id }}"><i class="fa-solid fa-trash text-danger"></i></a>
                     </td>
 
@@ -300,12 +297,12 @@
                 <div class= "row my-2 bg-light p-2">
                     <div class= "col-6">
                 <label class="form-group">Degree Title:</label>
-                <input class="form-control" type="text" name="educations[${educationsDiv.childElementCount}][degreeTitle]" placeholder="MBBS/BS/MS" >
+                <input class="form-control" type="text" name="educations[${educationsDiv.childElementCount}][degTitle]" placeholder="MBBS/BS/MS" >
                 </div>
 
                 <div class= "col-6">
                 <label class="form-group">Degree Name:</label>
-                <input class="form-control" type="text" name="educations[${educationsDiv.childElementCount}][degreeName]" >
+                <input class="form-control" type="text" name="educations[${educationsDiv.childElementCount}][degName]" >
                 </div>
                 <div class="col-6">
                 <label class="form-group">University:</label>
@@ -344,12 +341,12 @@
                 <div class= "row my-2 bg-light p-2">
                     <div class= "col-6">
                          <label class="form-group">Job Title:</label>
-                         <input class="form-control" type="text" name="experiences[${experiencesDiv.childElementCount}][date]" >
+                         <input class="form-control" type="text" name="experiences[${experiencesDiv.childElementCount}][jobTitle]" >
                     </div>
 
                     <div class= "col-6">
                         <label class="form-group">Company:</label>
-                        <input class="form-control" type="text" name="experiences[${experiencesDiv.childElementCount}][time]" >
+                        <input class="form-control" type="text" name="experiences[${experiencesDiv.childElementCount}][company]" >
                     </div>
 
                     <div class="col-6">

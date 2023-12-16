@@ -26,7 +26,8 @@ class StaffController extends Controller
      */
     public function create()
     {
-        return view('staff.create');
+        $deppartmentBreakdown = Deppartment::get();
+        return view('/staff.create', compact('deppartmentBreakdown'));
     }
 
     /**

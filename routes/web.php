@@ -112,7 +112,6 @@ Route::get('/appointedit/{id}',[AppointmentController::class,'appointedit'])->mi
 Route::get('/updateappoint',[AppointmentController::class,'appointupdate'])->middleware(['auth', 'verified', 'admin'])->name('appointupdate');
 Route::get('/deleteappoint/{id}',[AppointmentController::class,'deleteappoint'])->middleware(['auth', 'verified', 'admin'])->name('deleteappoint');
 Route::get('/detail/{id}',[AppointmentController::class,'detail'])->middleware(['auth', 'verified', 'admin'])->name('appoint.detail');
-Route::get('/get-deppartment-breakdown-staff',[AppointmentController::class,'getStaffDeppartment']);
 Route::get('/get-doctor-breakdown',[AppointmentController::class,'getDoctorBreakdown']);
   
 

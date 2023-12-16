@@ -45,15 +45,19 @@ class UserController extends Controller
      */
     public function update(Request $request)
     {
-
         $request->validate([
             'name' => 'required|max:255',
-             'email' => 'required'
+             'email' => 'required|email|unique:users'
         ]);
         $id = $request->id;
         $users = user::find($id);
         $users->name = $request->name;
         $users->email = $request->email;
+        $emailExists = user::where('email', $request->email)->exists();
+
+       if ($emailExists) {
+           return redirect()->back()->withInput()->withErrors(['email' => 'The email address is already in use.']);
+       }
         $users->usertype = $request->usertype;
         $users->save();
         return redirect()->route('users');

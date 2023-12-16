@@ -17,7 +17,7 @@
     <form id="myForm" action="{{route('appointupdate')}}"
         style="height: 40%; width: 50%; margin: 10% 5% 10% 25%; padding:5%;">
         <input type="number" class="form-control" id="id" name="id" hidden value="{{$appointdata->id}}">
-        <p class="text-center text-dark bg-warning p-2 my-5">Edit</p>
+        <p class="text-center text-dark bg-warning p-2 my-5">Edit Form</p>
         <div>
 
             <!-- section 1 -->
@@ -81,7 +81,7 @@
                         <input type="email" value="{{old('email', $appointdata->email)}}" id="email" name="email">
                         <p class="text-danger alert-warning"> {{$errors->first('email')}}</p>
                     <?php
-                        if($erros){
+                        if($errors){
                             echo "<script> alert('$errors') </script>";
                         }
                     ?>
@@ -208,7 +208,6 @@
                         </table>
                     </div>
 
-                    <a class="btn btn-outline-warning" href="{{url('appointedit/'.$appoint->id)}}">Edit</a>
                 </div>
                 <input type="submit" name="submit" id="submit" value="Submit">
                 

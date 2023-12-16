@@ -41,7 +41,10 @@ class DocterDataController extends Controller
     //Store and read data on admin panel in DoctorCrud
     public function store(Request $request) 
     { 
+        request()->validate([
 
+            'email' => 'required|email|unique:doctors'
+        ]);
    
         // image
         if ($request->hasFile('image')) {
@@ -64,9 +67,13 @@ class DocterDataController extends Controller
         'speciality' => $request->input('speciality'),
         'pmdc' => $request->input('pmdc'),
         'deppartments_id' => $request->input('deppartments_id'),
-        // $doctor->deppartments_id => $request->input('deppartments_id')
         ]);
     
+        $emailExists = docterData::where('email', $request->email)->exists();
+
+       if ($emailExists) {
+           return redirect()->back()->withInput()->withErrors(['email' => 'The email address is already in use.']);
+       }
 
         // ======Schedules ============
       $schedulesData = $request->input('schedules');
@@ -77,7 +84,7 @@ class DocterDataController extends Controller
                 'time' => $scheduleData['time'],
                 'docter_data_id' => $doctor->id,
             ]);
-            $doctor->schedules()->save($schedule); // Associate the schedule with the doctor
+            $doctor->schedules()->save($schedule); 
         }
         }
 

@@ -183,7 +183,7 @@ class AppointmentController extends Controller
     {
 
         $request->validate([
-            'email' => 'required|email|unique:appointments,email,' . $id,
+            'email' => 'required|email|unique:appointments,email,',
         ]);
             
         $id= $request->id;
@@ -199,7 +199,7 @@ class AppointmentController extends Controller
        $appoint->state=$request->state;
        $appoint->city=$request->city;
        $appoint->concern=$request->concern;
-       $appoint->department=$request->department;
+    //    $appoint->department=$request->department;
        $appoint->doctor=$request->doctor;
         $appoint->save();
         return redirect('/appoint');
