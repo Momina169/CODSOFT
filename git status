@@ -1,0 +1,400 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex fcd155b..e69de29 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,17 +0,0 @@[m
+[31m-![hms](https://github.com/Momina169/Hospital-Management-System/assets/104770735/283bd25d-5581-4b0d-829a-93b8f46ec1ac)[m
+[31m-<h2> Description</h2>[m
+[31m-<p>The web application features a dynamic frontend and backend, offering a comprehensive Hospital Management System tailored for administrative purposes. Within the system, administrators have the capability to efficiently oversee and control various aspects of hospital operations.[m
+[31m-[m
+[31m-The Admin Dashboard serves as the central hub for administrative tasks, empowering administrators to seamlessly manage hospital resources. This includes the ability to oversee and regulate the activities of hospital doctors, appointments, users, and their respective roles. The system facilitates streamlined management of staff within the hospital, providing a holistic view of personnel and their associated responsibilities. </p>[m
+[31m-[m
+[31m-<h2>How to use it</h2>[m
+[31m-<ul>[m
+[31m-    <li>Download the code and open it in your favourite editor e.g VS Code</li>[m
+[31m-    <li>Open Xampp control panel and Start Apache and MySql</li>[m
+[31m-    <li>Open Command prompt and run this command: <code>php artisan migrate:fresh --seed</code></li>[m
+[31m-    <li>Now, run this command: <code>php artisan serve</code></li>[m
+[31m-    <li>Type http://127.0.0.1:8000/ on your browser, website will open</li>[m
+[31m-</ul>[m
+[31m-<h3>To access Hospital Management System Dashboard, Use</h3>[m
+[31m-<pre>email: admin@example.com[m
+[31m-password: admin123</pre>[m
+[1mdiff --git a/app/Http/Controllers/AppointmentController.php b/app/Http/Controllers/AppointmentController.php[m
+[1mindex e57bc9c..a234055 100644[m
+[1m--- a/app/Http/Controllers/AppointmentController.php[m
+[1m+++ b/app/Http/Controllers/AppointmentController.php[m
+[36m@@ -183,7 +183,7 @@[m [mpublic function appointupdate(Request $request)[m
+     {[m
+ [m
+         $request->validate([[m
+[31m-            'email' => 'required|email|unique:appointments,email,' . $id,[m
+[32m+[m[32m            'email' => 'required|email|unique:appointments,email,',[m
+         ]);[m
+             [m
+         $id= $request->id;[m
+[36m@@ -199,7 +199,7 @@[m [mpublic function appointupdate(Request $request)[m
+        $appoint->state=$request->state;[m
+        $appoint->city=$request->city;[m
+        $appoint->concern=$request->concern;[m
+[31m-       $appoint->department=$request->department;[m
+[32m+[m[32m    //    $appoint->department=$request->department;[m
+        $appoint->doctor=$request->doctor;[m
+         $appoint->save();[m
+         return redirect('/appoint');[m
+[1mdiff --git a/app/Http/Controllers/DeppartmentController.php b/app/Http/Controllers/DeppartmentController.php[m
+[1mindex fe73a15..5a5c8a2 100644[m
+[1m--- a/app/Http/Controllers/DeppartmentController.php[m
+[1m+++ b/app/Http/Controllers/DeppartmentController.php[m
+[36m@@ -19,18 +19,15 @@[m [mpublic function getDeppartmentBreakdown()[m
+         [m
+         $deppartmentBreakdown = Deppartment::get();[m
+         return view('/appoint.create', compact('deppartmentBreakdown'));[m
+[31m-        // return response()->json($deppartmentBreakdown);[m
+     }[m
+[31m-[m
+[32m+[m[41m    [m
+     // index function[m
+     public function index()[m
+     {[m
+         $departments = Deppartment::with('docterdata')->get();[m
+         return view('/finddoctors.findDoctor', compact('departments'));[m
+[31m-[m
+[31m-        // return response()->json(['departments' => $departments]);[m
+[31m-        [m
+     }[m
+[32m+[m
+     // show[m
+     public function showDepartments(){[m
+        [m
+[36m@@ -40,40 +37,26 @@[m [mpublic function showDepartments(){[m
+        [m
+     }[m
+    [m
+[31m-[m
+[31m- [m
+     public function store(Request $request)[m
+     {[m
+         //[m
+     }[m
+ [m
+[31m-    /**[m
+[31m-     * Display the specified resource.[m
+[31m-     */[m
+     public function show(Deppartment $deppartment)[m
+     {[m
+         //[m
+     }[m
+ [m
+[31m-    /**[m
+[31m-     * Show the form for editing the specified resource.[m
+[31m-     */[m
+     public function edit(Deppartment $deppartment)[m
+     {[m
+         //[m
+     }[m
+ [m
+[31m-    /**[m
+[31m-     * Update the specified resource in storage.[m
+[31m-     */[m
+     public function update(Request $request, Deppartment $deppartment)[m
+     {[m
+         //[m
+     }[m
+ [m
+[31m-    /**[m
+[31m-     * Remove the specified resource from storage.[m
+[31m-     */[m
+     public function destroy(Deppartment $deppartment)[m
+     {[m
+         //[m
+[1mdiff --git a/app/Http/Controllers/DocterDataController.php b/app/Http/Controllers/DocterDataController.php[m
+[1mindex 2fa26c4..df2d8cb 100644[m
+[1m--- a/app/Http/Controllers/DocterDataController.php[m
+[1m+++ b/app/Http/Controllers/DocterDataController.php[m
+[36m@@ -41,7 +41,10 @@[m [mpublic function filterByCategory($department)[m
+     //Store and read data on admin panel in DoctorCrud[m
+     public function store(Request $request) [m
+     { [m
+[32m+[m[32m        request()->validate([[m
+ [m
+[32m+[m[32m            'email' => 'required|email|unique:doctors'[m
+[32m+[m[32m        ]);[m
+    [m
+         // image[m
+         if ($request->hasFile('image')) {[m
+[36m@@ -64,9 +67,13 @@[m [mpublic function store(Request $request)[m
+         'speciality' => $request->input('speciality'),[m
+         'pmdc' => $request->input('pmdc'),[m
+         'deppartments_id' => $request->input('deppartments_id'),[m
+[31m-        // $doctor->deppartments_id => $request->input('deppartments_id')[m
+         ]);[m
+     [m
+[32m+[m[32m        $emailExists = docterData::where('email', $request->email)->exists();[m
+[32m+[m
+[32m+[m[32m       if ($emailExists) {[m
+[32m+[m[32m           return redirect()->back()->withInput()->withErrors(['email' => 'The email address is already in use.']);[m
+[32m+[m[32m       }[m
+ [m
+         // ======Schedules ============[m
+       $schedulesData = $request->input('schedules');[m
+[36m@@ -77,7 +84,7 @@[m [mpublic function store(Request $request)[m
+                 'time' => $scheduleData['time'],[m
+                 'docter_data_id' => $doctor->id,[m
+             ]);[m
+[31m-            $doctor->schedules()->save($schedule); // Associate the schedule with the doctor[m
+[32m+[m[32m            $doctor->schedules()->save($schedule);[m[41m [m
+         }[m
+         }[m
+ [m
+[1mdiff --git a/app/Http/Controllers/StaffController.php b/app/Http/Controllers/StaffController.php[m
+[1mindex cbd35d1..37b184d 100644[m
+[1m--- a/app/Http/Controllers/StaffController.php[m
+[1m+++ b/app/Http/Controllers/StaffController.php[m
+[36m@@ -26,7 +26,8 @@[m [mpublic function deptindex($id)[m
+      */[m
+     public function create()[m
+     {[m
+[31m-        return view('staff.create');[m
+[32m+[m[32m        $deppartmentBreakdown = Deppartment::get();[m
+[32m+[m[32m        return view('/staff.create', compact('deppartmentBreakdown'));[m
+     }[m
+ [m
+     /**[m
+[1mdiff --git a/app/Http/Controllers/UserController.php b/app/Http/Controllers/UserController.php[m
+[1mindex cc75ae5..3ffe6e4 100644[m
+[1m--- a/app/Http/Controllers/UserController.php[m
+[1m+++ b/app/Http/Controllers/UserController.php[m
+[36m@@ -45,15 +45,19 @@[m [mpublic function edit($id)[m
+      */[m
+     public function update(Request $request)[m
+     {[m
+[31m-[m
+         $request->validate([[m
+             'name' => 'required|max:255',[m
+[31m-             'email' => 'required'[m
+[32m+[m[32m             'email' => 'required|email|unique:users'[m
+         ]);[m
+         $id = $request->id;[m
+         $users = user::find($id);[m
+         $users->name = $request->name;[m
+         $users->email = $request->email;[m
+[32m+[m[32m        $emailExists = user::where('email', $request->email)->exists();[m
+[32m+[m
+[32m+[m[32m       if ($emailExists) {[m
+[32m+[m[32m           return redirect()->back()->withInput()->withErrors(['email' => 'The email address is already in use.']);[m
+[32m+[m[32m       }[m
+         $users->usertype = $request->usertype;[m
+         $users->save();[m
+         return redirect()->route('users');[m
+[1mdiff --git a/public/images/adddoctor.png b/public/images/adddoctor.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6c5a3d8[m
+Binary files /dev/null and b/public/images/adddoctor.png differ
+[1mdiff --git a/public/images/hms.png b/public/images/hms.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3eb3af7[m
+Binary files /dev/null and b/public/images/hms.png differ
+[1mdiff --git a/public/images/roles-users.png b/public/images/roles-users.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3aa03c7[m
+Binary files /dev/null and b/public/images/roles-users.png differ
+[1mdiff --git a/resources/views/admin/user.blade.php b/resources/views/admin/user.blade.php[m
+[1mindex e6b5a88..166f279 100644[m
+[1m--- a/resources/views/admin/user.blade.php[m
+[1m+++ b/resources/views/admin/user.blade.php[m
+[36m@@ -25,6 +25,7 @@[m
+                             <div class="mb-3">[m
+                                 <label for="exampleInputEmail1" class="form-label">Name</label>[m
+                                 <input type="text" name="name" class="form-control" required>[m
+[32m+[m[32m                                <p class="text-danger"> {{$errors->first('email')}}</p>[m
+                             </div>[m
+                             <div class="mb-3">[m
+                                 <label for="exampleInputPassword1" class="form-label">Email</label>[m
+[1mdiff --git a/resources/views/appoint/edit.blade.php b/resources/views/appoint/edit.blade.php[m
+[1mindex 2cdcedb..171701f 100644[m
+[1m--- a/resources/views/appoint/edit.blade.php[m
+[1m+++ b/resources/views/appoint/edit.blade.php[m
+[36m@@ -17,7 +17,7 @@[m
+     <form id="myForm" action="{{route('appointupdate')}}"[m
+         style="height: 40%; width: 50%; margin: 10% 5% 10% 25%; padding:5%;">[m
+         <input type="number" class="form-control" id="id" name="id" hidden value="{{$appointdata->id}}">[m
+[31m-        <p class="text-center text-dark bg-warning p-2 my-5">Edit</p>[m
+[32m+[m[32m        <p class="text-center text-dark bg-warning p-2 my-5">Edit Form</p>[m
+         <div>[m
+ [m
+             <!-- section 1 -->[m
+[36m@@ -81,7 +81,7 @@[m
+                         <input type="email" value="{{old('email', $appointdata->email)}}" id="email" name="email">[m
+                         <p class="text-danger alert-warning"> {{$errors->first('email')}}</p>[m
+                     <?php[m
+[31m-                        if($erros){[m
+[32m+[m[32m                        if($errors){[m
+                             echo "<script> alert('$errors') </script>";[m
+                         }[m
+                     ?>[m
+[36m@@ -208,7 +208,6 @@[m [mclass="fa-solid fa-angle-up"></i> </button>[m
+                         </table>[m
+                     </div>[m
+ [m
+[31m-                    <a class="btn btn-outline-warning" href="{{url('appointedit/'.$appoint->id)}}">Edit</a>[m
+                 </div>[m
+                 <input type="submit" name="submit" id="submit" value="Submit">[m
+                 [m
+[1mdiff --git a/resources/views/doctor/DetailsCrud.blade.php b/resources/views/doctor/DetailsCrud.blade.php[m
+[1mindex 1bb633e..d728654 100644[m
+[1m--- a/resources/views/doctor/DetailsCrud.blade.php[m
+[1m+++ b/resources/views/doctor/DetailsCrud.blade.php[m
+[36m@@ -1,6 +1,4 @@[m
+[31m-@extends('layouts._layout')[m
+ [m
+[31m-@section('content')[m
+ <x-app-layout>[m
+     <x-slot name="header">[m
+         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">[m
+[36m@@ -104,4 +102,3 @@[m
+         <h3></h3>[m
+     </div>[m
+ </x-app-layout>[m
+[31m-@endsection[m
+\ No newline at end of file[m
+[1mdiff --git a/resources/views/doctor/doctors.blade.php b/resources/views/doctor/doctors.blade.php[m
+[1mindex 5e10bee..c625be4 100644[m
+[1m--- a/resources/views/doctor/doctors.blade.php[m
+[1m+++ b/resources/views/doctor/doctors.blade.php[m
+[36m@@ -33,6 +33,8 @@[m
+                             <div class="col-6">[m
+                                 <label class="form-group" for="email">Email ID</label>[m
+                                 <input class="form-control" type="email" name="email" placeholder="abc@gmail.com">[m
+[32m+[m[32m                                 <p class="text-danger"> {{$errors->first('email')}}</p>[m
+[32m+[m
+                             </div>[m
+                             <div class="col-6">[m
+ [m
+[36m@@ -91,7 +93,7 @@[m [mclass="btn btn-outline-danger border  rounded-cricle float-right"[m
+ [m
+                             <div class="education row">[m
+                                 <div class="col-6">[m
+[31m-                                    <label class="form-group" for="educations[0][degtitle]">Degree Title:</label>[m
+[32m+[m[32m                                    <label class="form-group" for="educations[0][degTitle]">Degree Title:</label>[m
+                                     <input class="form-control" type="text" name="educations[0][degTitle]"[m
+                                         placeholder="MBBS/BS/MS">[m
+                                 </div>[m
+[36m@@ -164,11 +166,6 @@[m [mclass="btn btn-outline-danger border rounded-cricle float-right"[m
+                                     <input class="form-control" type="text" name="experiences[0][Location]"[m
+                                         placeholder="Ex. Lahore, Punjab">[m
+                                 </div>[m
+[31m-                                {{-- <div class="col-6">[m
+[31m-                                    <label class="form-group" for="experiences[0][years]">Years:</label>[m
+[31m-                                    <input class="form-control" type="number" name="experiences[0][years]" >[m
+[31m-                                </div> --}}[m
+[31m-[m
+ [m
+                             </div>[m
+                         </div>[m
+[36m@@ -241,7 +238,7 @@[m [mclass="btn btn-outline-danger border rounded-cricle float-right"[m
+ [m
+                     <td> <a href="{{ 'DetailsCrud/' . $d->id }}"><i class="fa-solid fa-circle-info"></i></a></td>[m
+                     <td>[m
+[31m-                        <a href="{{ 'edit/' . $d->id }}"><i class="fa-regular fa-pen-to-square"></i></a>[m
+[32m+[m[32m                        <!-- <a href="{{ 'edit/' . $d->id }}"><i class="fa-regular fa-pen-to-square"></i></a> -->[m
+                         <a href="{{ 'DeleteDoctor/' . $d->id }}"><i class="fa-solid fa-trash text-danger"></i></a>[m
+                     </td>[m
+ [m
+[36m@@ -300,12 +297,12 @@[m [mclass="btn btn-outline-danger border rounded-cricle float-right"[m
+                 <div class= "row my-2 bg-light p-2">[m
+                     <div class= "col-6">[m
+                 <label class="form-group">Degree Title:</label>[m
+[31m-                <input class="form-control" type="text" name="educations[${educationsDiv.childElementCount}][degreeTitle]" placeholder="MBBS/BS/MS" >[m
+[32m+[m[32m                <input class="form-control" type="text" name="educations[${educationsDiv.childElementCount}][degTitle]" placeholder="MBBS/BS/MS" >[m
+                 </div>[m
+ [m
+                 <div class= "col-6">[m
+                 <label class="form-group">Degree Name:</label>[m
+[31m-                <input class="form-control" type="text" name="educations[${educationsDiv.childElementCount}][degreeName]" >[m
+[32m+[m[32m                <input class="form-control" type="text" name="educations[${educationsDiv.childElementCount}][degName]" >[m
+                 </div>[m
+                 <div class="col-6">[m
+                 <label class="form-group">University:</label>[m
+[36m@@ -344,12 +341,12 @@[m [mclass="btn btn-outline-danger border rounded-cricle float-right"[m
+                 <div class= "row my-2 bg-light p-2">[m
+                     <div class= "col-6">[m
+                          <label class="form-group">Job Title:</label>[m
+[31m-                         <input class="form-control" type="text" name="experiences[${experiencesDiv.childElementCount}][date]" >[m
+[32m+[m[32m                         <input class="form-control" type="text" name="experiences[${experiencesDiv.childElementCount}][jobTitle]" >[m
+                     </div>[m
+ [m
+                     <div class= "col-6">[m
+                         <label class="form-group">Company:</label>[m
+[31m-                        <input class="form-control" type="text" name="experiences[${experiencesDiv.childElementCount}][time]" >[m
+[32m+[m[32m                        <input class="form-control" type="text" name="experiences[${experiencesDiv.childElementCount}][company]" >[m
+                     </div>[m
+ [m
+                     <div class="col-6">[m
+[1mdiff --git a/resources/views/layouts/app.blade.php b/resources/views/layouts/app.blade.php[m
+[1mindex f2060f5..e323b3c 100644[m
+[1m--- a/resources/views/layouts/app.blade.php[m
+[1m+++ b/resources/views/layouts/app.blade.php[m
+[36m@@ -21,6 +21,11 @@[m
+     <link rel="stylesheet" href="{{ asset('/css_bootstrap.min.css') }}">[m
+     <link rel="stylesheet" href="{{ asset('/sidebars.css') }}">[m
+ [m
+[32m+[m[32m    <style>[m
+[32m+[m[32m        .admin-sidebar{[m
+[32m+[m[32m            max-width: 20%;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    </style>[m
+ </head>[m
+ [m
+ <body class="font-sans" >[m
+[36m@@ -35,7 +40,7 @@[m
+ [m
+     [m
+         <div class="row" >[m
+[31m-            <div class="col-sm-12 col-md-3 col-lg-3 ">[m
+[32m+[m[32m            <div class="col-sm-12 col-md-3 col-lg-3 admin-sidebar">[m
+                 <nav class="navbar navbar-expand-lg d-flex flex-column  bg-light" style=" ">[m
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar"[m
+                         aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">[m
+[36m@@ -125,7 +130,7 @@[m [mclass="d-flex align-items-center mb-3 mb-md-0 m-2 link-dark text-decoration-none[m
+ [m
+             </div>[m
+ [m
+[31m-            <div class="col-sm-12 col-md-9 col-lg-9 mt-5" style="min-width: 70%;">[m
+[32m+[m[32m            <div class="col-sm-12 col-md-9 col-lg-9 mt-5" style="min-width: 60%;">[m
+                 <!-- Page Content -->[m
+ [m
+                 {{ $slot }}[m
+[1mdiff --git a/resources/views/staff/create.blade.php b/resources/views/staff/create.blade.php[m
+[1mindex b34a64f..ea87701 100644[m
+[1m--- a/resources/views/staff/create.blade.php[m
+[1m+++ b/resources/views/staff/create.blade.php[m
+[36m@@ -94,10 +94,12 @@[m
+                 </select>[m
+             </div>[m
+             <div class="col-4">[m
+[31m-                <label for="deppartment" class="form-label">Department</label>[m
+[31m-                <select id="deppartment" name="deppartment" class="form-select">[m
+[31m-                    <option value="">Select a Department</option>[m
+[31m-                </select>[m
+[32m+[m[32m            <label for="deppartment" class="form-label">Department</label>[m
+[32m+[m[32m                    <select id="deppartment" name="deppartment" class="form-select">[m
+[32m+[m[32m                        @foreach($deppartmentBreakdown as $dep)[m
+[32m+[m[32m                        <option value="{{$dep->id}}" id="deppartment">{{$dep->DepartmentName}}</option>[m
+[32m+[m[32m                        @endforeach[m
+[32m+[m[32m                    </select>[m
+             </div>[m
+             <div class="col-4">[m
+                 <label for="salary" class="form-label">Salary</label>[m
+[1mdiff --git a/routes/web.php b/routes/web.php[m
+[1mindex 6f024a4..37f7bf6 100644[m
+[1m--- a/routes/web.php[m
+[1m+++ b/routes/web.php[m
+[36m@@ -112,7 +112,6 @@[m
+ Route::get('/updateappoint',[AppointmentController::class,'appointupdate'])->middleware(['auth', 'verified', 'admin'])->name('appointupdate');[m
+ Route::get('/deleteappoint/{id}',[AppointmentController::class,'deleteappoint'])->middleware(['auth', 'verified', 'admin'])->name('deleteappoint');[m
+ Route::get('/detail/{id}',[AppointmentController::class,'detail'])->middleware(['auth', 'verified', 'admin'])->name('appoint.detail');[m
+[31m-Route::get('/get-deppartment-breakdown-staff',[AppointmentController::class,'getStaffDeppartment']);[m
+ Route::get('/get-doctor-breakdown',[AppointmentController::class,'getDoctorBreakdown']);[m
+   [m
+ [m
