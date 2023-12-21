@@ -353,7 +353,30 @@
       <!-- <button type="submit" style="height: 7%;width: 13%; margin-top: 4%;"><a href="{{asset('service')}}" style="text-decoration: none;color:black;">Details</a></button> -->
     </div>
   </section>
+
+  <section>
+   <!-- My fiverr Badge -->
+
+<div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+     <a itemprop='url' href=https://www.fiverr.com/momina_ijaz9 rel="nofollow" target="_blank" style='display: inline-block;'>
+        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-dfadd015-d033-4ace-9278-fbb9db24bb32' itemprop='contentURL' style='display: none;'></div>
+        <div id='fiverr-widget-seller-data' style='display: none;'>
+            <div itemprop='name' >momina_ijaz9</div>
+            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+            <div itemprop='jobtitle'>Seller</div>
+            <div itemprop='description'>I am dedicated to delivering professional Full Stack Web Development services with a focus on Laravel and PHP technologies. I'm committed to building secure, high-quality websites with a foundation of 100% clean code by utilizing a comprehensive toolkit that combines HTML, CSS, Bootstrap, JavaScript, jQuery, Ajax, Rest APIs, PHP, MySQL, and the Laravel framework. My experience working directly with WordPress websites for more than two years demonstrates my expertise in this fast-paced industry.</div>
+        </div>
+    </a>
+</div>
+
+<script id='fiverr-seller-widget-script-dfadd015-d033-4ace-9278-fbb9db24bb32' src='https://widgets.fiverr.com/api/v1/seller/momina_ijaz9?widget_id=dfadd015-d033-4ace-9278-fbb9db24bb32' data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script>
+
+
+  </section>
 </body>
+
+
+
   <script>
     // Automatic image rotation using JavaScript
     const imageSlider = document.querySelector('.image-slider');
