@@ -12,6 +12,7 @@ export default defineConfig({
         }),
     ],
     build: {
-        outDir: 'public/build', // Specify the output directory
+        outDir: 'public/build', 
+        manifest: true,
     },
 });
