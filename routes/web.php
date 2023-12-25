@@ -93,6 +93,9 @@ Route::get('register', function () {
     return view('/register');
 })->middleware(['auth', 'verified', 'admin'])->name('register');
 
+Route::get('login', function () {
+    return view('/auth.login');
+})->middleware(['auth', 'verified', 'admin'])->name('login');
 
 Route::get('/success', function () {
     return view('checkout.success');
