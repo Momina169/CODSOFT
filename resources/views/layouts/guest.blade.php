@@ -14,9 +14,9 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{asset('/css_bootstrap.min.css')}}">
-    <link rel="manifest" href="{{ asset('build/manifest.json') }}">
-    <script rel="jquery" src="{{asset('/jquery_3.6.4_jquery.min.js')}}"></script>
+    <link rel="stylesheet" href="{{secure_asset('/css_bootstrap.min.css')}}">
+    <link rel="manifest" href="{{ secure_asset('build/manifest.json') }}">
+    <script rel="jquery" src="{{secure_asset('/jquery_3.6.4_jquery.min.js')}}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
@@ -24,7 +24,7 @@
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
         <div>
             <a href="{{route('welcome')}}">
-            <img src="{{asset('images/logo.png')}}" width="150px" height="auto">
+            <img src="{{secure_asset('images/logo.png')}}" width="150px" height="auto">
 
             </a>
         </div>
