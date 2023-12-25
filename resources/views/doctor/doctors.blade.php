@@ -414,7 +414,7 @@
         });
     </script>
 
-    <script src="js_bootstrap.bundle.min.js"></script>
+<script src="{{ secure_asset('js_bootstrap.bundle.min.js') }}"></script>
 
 
 

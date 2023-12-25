@@ -16,10 +16,10 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script rel="jquery" src="{{ asset('/jquery_3.6.4_jquery.min.js') }}"></script>
+    <script rel="jquery" src="{{ secure_asset('/jquery_3.6.4_jquery.min.js') }}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('/css_bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/sidebars.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/css_bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
 
     <style>
         .admin-sidebar{
@@ -56,7 +56,7 @@
 
                             <a href="{{ route('dashboard') }}">
                                 <img class="d-flex justify-content-center mb-3 mb-md-0 m-2"
-                                    src="{{ asset('images/logo.png') }}" width="90px" height="auto">
+                                    src="{{ secure_asset('images/logo.png') }}" width="90px" height="auto">
                             </a>
 
                             <a href="/"
@@ -139,9 +139,9 @@
 
    
 
-    <script src="{{ asset('/sidebars.js') }}"></script>
-    <script src="{{ asset('/cdn.jsdelivr.net_npm.js') }}"></script>
-    <script src="{{ asset('/js_bootstrap.min.js') }}"></script>
+    <script src="{{ secure_asset('/sidebars.js') }}"></script>
+    <script src="{{ secure_asset('/cdn.jsdelivr.net_npm.js') }}"></script>
+    <script src="{{ secure_asset('/js_bootstrap.min.js') }}"></script>
 </body>
 
 </html>

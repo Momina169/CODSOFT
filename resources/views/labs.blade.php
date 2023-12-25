@@ -207,90 +207,90 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="surgery/5.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/5.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/5.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="surgery/9.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/9.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/9.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="surgery/2.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/2.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="surgery/5.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/5.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/5.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="surgery/8.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/8.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/8.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="surgery/4.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/4.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/4.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="surgery/7.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/7.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/7.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="surgery/8.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/8.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/8.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="surgery/6.jpg" class="img-fluid" alt="">
+            <img src="{{secure_asset('surgery/6.jpg')}}" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="surgery/6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"></a>
-              <a href="portfolio-details.html" title="More Details"></a>
+              <a href="{{secure_asset('surgery/6.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"></a>
+              <a href="#" title="More Details"></a>
             </div>
           </div>
         </div>
@@ -305,12 +305,12 @@
 
 
      <!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+     <script src="{{ secure_asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ secure_asset('assets/vendor/aos/aos.js') }}"></script>
+<script src="{{ secure_asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ secure_asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ secure_asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ secure_asset('assets/vendor/php-email-form/validate.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -319,7 +319,7 @@
 <!-- Datepicker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 <!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="{{ secure_asset('assets/js/main.js') }}"></script>
 <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
 <!-- Include jQuery library -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

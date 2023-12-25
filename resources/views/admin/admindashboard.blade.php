@@ -11,7 +11,7 @@
 
         <div class="col-6">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{asset('/images/doctors.jpg')}}" alt="doctors">
+                <img class="card-img-top" src="{{secure_asset('/images/doctors.jpg')}}" alt="doctors">
                 <div class="card-body">
                     <h5 class="card-title">Doctors</h5>
                     <a href="{{route('doctorcrud')}}" class="btn btn-outline-info">Check List</a>
@@ -21,7 +21,7 @@
 
         <div class="col-6">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{asset('/images/appointment.jpg')}}" alt="doctors">
+                <img class="card-img-top" src="{{secure_asset('/images/appointment.jpg')}}" alt="doctors">
                 <div class="card-body">
                     <h5 class="card-title">Appointments</h5>
                     <a href="{{route('appoint.index')}}" class="btn btn-outline-info">Check List</a>
@@ -31,7 +31,7 @@
 
         <div class="col-6 mt-2" >
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top"  src="{{asset('/images/users.png')}}" alt="doctors">
+                <img class="card-img-top"  src="{{secure_asset('/images/users.png')}}" alt="doctors">
                 <div class="card-body">
                     <h5 class="card-title">Roles/Users</h5>
                     <a href="{{route('users')}}" class="btn btn-outline-info">Check List</a>
@@ -41,7 +41,7 @@
 
         <div class="col-6">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{asset('/images/team5.jpg')}}" alt="doctors">
+                <img class="card-img-top" src="{{secure_asset('/images/team5.jpg')}}" alt="doctors">
                 <div class="card-body">
                     <h5 class="card-title">Staff</h5>
                     <a href="{{route('staff.index')}}" class="btn btn-outline-info">Check List</a>

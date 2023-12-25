@@ -10,7 +10,7 @@
                     <div class="card">
                         <div class="row no-gutters c1">
                             <div class="col-md-4">
-                                <img src="images/patient care.jpeg" alt="Small Picture" class="card-img" height="260px">
+                                <img src="{{secure_asset('images/patient care.jpeg')}}" alt="Small Picture" class="card-img" height="260px">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -30,7 +30,7 @@
                     <div class="card">
                         <div class="row no-gutters c2">
                             <div class="col-md-4">
-                                <img src="images/advancement.jpeg" alt="Small Picture" class="card-img" height="250px">
+                                <img src="{{secure_asset('images/advancement.jpeg')}}" alt="Small Picture" class="card-img" height="250px">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -51,7 +51,7 @@
                     <div class="card">
                         <div class="row no-gutters c1">
                             <div class="col-md-4">
-                                <img src="images/empowerment.jpeg" alt="Small Picture" class="card-img" height="260px">
+                                <img src="{{secure_asset('images/empowerment.jpeg')}}" alt="Small Picture" class="card-img" height="260px">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -71,7 +71,7 @@
                     <div class="card">
                         <div class="row no-gutters c2">
                             <div class="col-md-4">
-                                <img src="images/community.jpeg" alt="Small Picture" class="card-img">
+                                <img src="{{secure_asset('images/community.jpeg')}}" alt="Small Picture" class="card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">

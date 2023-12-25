@@ -9,7 +9,7 @@
                     <div class="card">
                         <div class="row no-gutters c1">
                             <div class="col-md-4">
-                                <img src="{{asset('/images/55.jpg')}}" alt="Small Picture" class="card-img">
+                                <img src="{{secure_asset('/images/55.jpg')}}" alt="Small Picture" class="card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -31,7 +31,7 @@
                     <div class="card">
                         <div class="row no-gutters c2">
                             <div class="col-md-4">
-                                <img src="images/national-cancer-institute-byGTytEGjBo-unsplash.jpg" alt="Small Picture" class="card-img" height="250px">
+                                <img src="{{ secure_asset('images/national-cancer-institute-byGTytEGjBo-unsplash.jpg')}}" alt="Small Picture" class="card-img" height="250px">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -50,7 +50,7 @@
                     <div class="card">
                         <div class="row no-gutters c1">
                             <div class="col-md-4">
-                                <img src="{{asset('/images/58.jpg')}}" alt="Small Picture" class="card-img" height="260px">
+                                <img src="{{secure_asset('/images/58.jpg')}}" alt="Small Picture" class="card-img" height="260px">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -69,7 +69,7 @@
                     <div class="card">
                         <div class="row no-gutters c2">
                             <div class="col-md-4">
-                                <img src="{{asset('/images/empowerment.jpeg')}}" alt="Small Picture" class="card-img">
+                                <img src="{{secure_asset('/images/empowerment.jpeg')}}" alt="Small Picture" class="card-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">

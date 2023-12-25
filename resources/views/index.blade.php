@@ -350,7 +350,7 @@
           </div>
         </div>
       </div>
-      <!-- <button type="submit" style="height: 7%;width: 13%; margin-top: 4%;"><a href="{{asset('service')}}" style="text-decoration: none;color:black;">Details</a></button> -->
+      <!-- <button type="submit" style="height: 7%;width: 13%; margin-top: 4%;"><a href="{{secure_asset('service')}}" style="text-decoration: none;color:black;">Details</a></button> -->
     </div>
   </section>
 </body>

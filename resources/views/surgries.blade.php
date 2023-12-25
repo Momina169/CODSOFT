@@ -200,7 +200,7 @@
                     <div class="tab-pane active show" id="tab-1">
                       <h3>Cardiology</h3>
                       <p class="fst-italic">Cardiology, a specialized branch of medicine, delves into the intricate world of the heart and its functions. With the heart being the central engine that drives our circulatory system, cardiology plays a pivotal role in diagnosing, treating, and preventing various cardiovascular disorders.</p>
-                      <img src="surgery/departments-1.jpg" alt="" class="img-fluid">
+                      <img src="{{secure_asset('surgery/departments-1.jpg')}}" alt="" class="img-fluid">
                       <p>Cardiology, a specialized branch of medicine, delves into the intricate world of the heart and its functions. With the heart being the central engine that drives our circulatory system, cardiology plays a pivotal role in diagnosing, treating, and preventing various cardiovascular disorders. From the rhythmic beat that keeps us alive to the complexities of blood flow, cardiology offers insights into the mechanisms that sustain life.<div class="row">
                         <div class="col-lg-6">
                           <ul>
@@ -223,14 +223,14 @@
                     <div class="tab-pane " id="tab-2">
                       <h3>Neurology</h3>
                       <p class="fst-italic">Neurology is a captivating and intricate branch of medicine that delves into the complexities of the nervous system – the body's communication network. From the brain's intricate command center to the delicate nerves that extend throughout the body, neurology seeks to understand, diagnose, and treat a wide spectrum of neurological disorders. This field holds the key to unraveling the mysteries of the human mind and the intricate mechanisms that govern our movements, thoughts, and emotions.</p>
-                      <img src="surgery/departments-2.jpg" alt="" class="img-fluid">
+                      <img src="{{secure_asset('surgery/departments-2.jpg')}}" alt="" class="img-fluid">
                       <p>We understand that undergoing surgery can be a significant decision, and we are here to support you throughout the entire processBrain Health and Function: Neurologists study the brain's structure and function to gain insights into its role in cognition, emotion, memory, and behavior. They diagnose and treat disorders ranging from migraines and epilepsy to neurodegenerative diseases like Alzheimer's and Parkinson's.Brain Health and Function: Neurologists study the brain's structure and function to gain insights into its role in cognition, emotion, memory, and behavior. They diagnose and treat disorders ranging from migraines and epilepsy to neurodegenerative diseases like Alzheimer's and Parkinson's.Brain Health and Function: Neurologists study the brain's structure and function to gain insights into its role in cognition, emotion, memory, and behavior. They diagnose and treat disorders ranging from migraines and epilepsy to neurodegenerative diseases like Alzheimer's and Parkinson's.Brain Health and Function: Neurologists study the brain's structure and function to gain insights into its role in cognition, emotion, memory, and behavior. They diagnose and treat disorders ranging from migraines and epilepsy to neurodegenerative diseases like Alzheimer's and Parkinson's.</p>
                       
                     </div>
                     <div class="tab-pane" id="tab-3">
                       <h3>Orthopedic Surgeries</h3>
                       <p class="fst-italic">Orthopedic surgery is a specialized branch of medicine that focuses on diagnosing, treating, and correcting musculoskeletal conditions. These surgical procedures are designed to address a wide range of issues affecting the bones, joints, muscles, ligaments, and tendons, with the ultimate goal of restoring mobility, reducing pain, and improving the overall quality of life for patients.</p>
-                      <img src="surgery/departments-3.jpg" alt="" class="img-fluid">
+                      <img src="{{secure_asset('surgery/departments-3.jpg')}}" alt="" class="img-fluid">
                       <h3>Joint Replacement Surgery:</h3>
                       <p>Joint replacement procedures, such as total hip replacement, total knee replacement, and shoulder replacement, are performed to replace damaged or worn-out joints with artificial implants. These surgeries are particularly beneficial for individuals with severe arthritis or joint degeneration, helping them regain mobility and alleviate pain.</p>
                       <h3>Spine Surgery:</h3>
@@ -240,7 +240,7 @@
                     <div class="tab-pane" id="tab-4">
                       <h3>Gastrointestinal Surgeries</h3>
                       <p class="fst-italic">Gastrointestinal surgeries encompass a diverse range of procedures performed to diagnose, treat, and manage conditions affecting the digestive system. From the esophagus to the rectum, these surgeries address a variety of issues that impact digestion, absorption of nutrients, and overall gastrointestinal well-being. The field of gastrointestinal surgery has evolved significantly, offering innovative approaches to restore digestive health and improve patients' quality of life.</p>
-                      <img src="surgery/departments-4.jpg" alt="" class="img-fluid">
+                      <img src="{{secure_asset('surgery/departments-4.jpg')}}" alt="" class="img-fluid">
                      <h3>Bariatric Surgery:</h3>
                       <p>Bariatric procedures aim to assist individuals struggling with severe obesity in achieving sustainable weight loss.</p>
                       <h3>Colorectal Surgery:</h3>
@@ -253,7 +253,7 @@
                     <div class="tab-pane" id="tab-5">
                       <h3>Laparoscopic Surgery</h3>
                       <p class="fst-italic">Laparoscopic surgery is a category of general surgeries that use laparoscopes to perform minimally invasive surgeries in Nashville, Tennessee. As mentioned earlier, exploratory laparotomy can be performed with a laparoscope. Additionally, our surgeons use laparoscopic techniques to improve appendectomies, gallbladder removal, colon surgery, hernia repairs, and GERD repairs through Nissen Fundoplication.</p>
-                      <img src="surgery/125.jpg" alt="" class="img-fluid">
+                      <img src="{{secure_asset('surgery/125.jpg')}}" alt="" class="img-fluid">
                       <h3>LIPOMA:</h3>
                       <p>A lipoma is a lump of fat cells that forms under the skin and causes a visual bulge on the exterior of the skin. Lipomas can be mistaken for cancerous growths, but they are not cancerous nor harmful. Some may cause pain if they form above a nerve. If you want a lipoma removed it can be done through excision surgery from a general surgeon or one of our board-certified plastic surgeons in Nashville.</p>
                       <h3>Spine Surgery:</h3>
@@ -273,7 +273,7 @@
                       <p class="fst-italic">At The Surgical Clinic, we treat liver cancer and liver disease through liver resectioning surgery. The earlier the disease is detected, the better the patients chances for successful treatment and recovery. The liver is a vital organ, but it can still function if the diseased sections are removed and the rest of the liver is healthy.
     
                         Consult with your doctor and your surgeon to find out if this surgery is the right treatment for you.</p>
-                      <img src="surgery/123.jpg" alt="" class="img-fluid">
+                      <img src="{{secure_asset('surgery/123.jpg')}}" alt="" class="img-fluid">
                       
                       <h3>Fetal blood supply:</h3>
                       <p>In the growing fetus, a major source of blood to the liver is the umbilical vein, which supplies nutrients to the growing fetus. The umbilical vein enters the abdomen at the umbilicus and passes upward along the free margin of the falciform ligament of the liver to the inferior surface of the liver. There, it joins with the left branch of the portal vein. The ductus venosus carries blood from the left portal vein to the left hepatic vein and then to the inferior vena cava, allowing placental blood to bypass the liver. In the fetus, the liver does not perform the normal digestive processes and filtration of the infant liver because nutrients are received directly from the mother via the placenta. The fetal liver releases some blood stem cells that migrate to the fetal thymus, creating the T cells (or T lymphocytes). After birth, the formation of blood stem cells shifts to the red bone marrow. After 2–5 days, the umbilical vein and ductus venosus are obliterated; the former becomes the round ligament of liver and the latter becomes the ligamentum venosum. In the disorders of cirrhosis and portal hypertension, the umbilical vein can open up again.</p>
@@ -288,7 +288,7 @@
                     <div class="tab-pane" id="tab-7">
                       <h3>Dental anesthesia</h3>
                       <p class="fst-italic">Dentists inject anesthetic to block sensory transmission by the alveolar nerves. The superior alveolar nerves are not usually anesthetized directly because they are difficult to approach with a needle. For this reason, the maxillary teeth are usually anesthetized locally by inserting the needle beneath the oral mucosa surrounding the teeth. The inferior alveolar nerve is probably anesthetized more often than any other nerve in the body. To anesthetize this nerve, the dentist inserts the needle somewhat beyond the patient's last molar.</p>
-                      <img src="surgery/124.jpg" alt="" class="img-fluid">
+                      <img src="{{ secure_asset('surgery/124.jpg')}}" alt="" class="img-fluid">
                       <h3>Orthodontic treatment:</h3>
                       <p>Implants and implant-supported prosthesis  also an orthodontic treatment as it involves bones
                         Apicoectomy  also an orthodontic treatment as part of the underlying bone structure must be removed
