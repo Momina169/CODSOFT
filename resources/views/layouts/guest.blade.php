@@ -18,13 +18,21 @@
     <link rel="manifest" href="{{ secure_asset('build/manifest.json') }}">
     <script rel="jquery" src="{{ secure_asset('/jquery_3.6.4_jquery.min.js')}}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Secure Links -->
+    <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script>
+    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
+
 </head>
 
 <body class="font-sans text-gray-900 antialiased">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
         <div>
             <a href="{{route('welcome')}}">
-            <img src="{{secure_asset('images/logo.png')}}" width="150px" height="auto">
+                <img src="{{secure_asset('images/logo.png')}}" width="150px" height="auto">
 
             </a>
         </div>

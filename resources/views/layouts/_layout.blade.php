@@ -18,6 +18,13 @@
     <link href="{{secure-asset('assets/img/favicon.png')" rel="icon">
     <link href="secure_asset('assets/img/apple-touch-icon.png')" rel="apple-touch-icon">
 
+     <!-- Secure Links -->
+     <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script>
+    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
+
 </head>
 
 <body>
