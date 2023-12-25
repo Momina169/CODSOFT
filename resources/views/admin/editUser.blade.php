@@ -7,7 +7,7 @@
     </x-slot>
 
     <h5 class="modal-title fs-3 text-info">Edit User</h5>
-    <form action="{{route('update')}}">
+    <form action="{{ url(route('update')) }}">
         <div class="mb-3">
             <input type="number" name="id" value="{{$users->id}}" hidden>
             <label for="exampleInputEmail1" class="form-label">Name</label>

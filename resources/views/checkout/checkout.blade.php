@@ -19,7 +19,7 @@
                     <p>Pay Fixed Appointment fee of $25 to proceed</p>
                 </div>
                 <div class="col-6 gy-5">
-                    <form action="{{route('session')}}" method="get">
+                    <form action="{{ url(route('session'))}}" method="get">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     
                     <label for="name">Name</label><br>

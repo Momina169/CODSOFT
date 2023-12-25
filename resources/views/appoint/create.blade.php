@@ -33,7 +33,7 @@
 
 
 <div class="container px-5">
-    <form id="myForm" method="get" action="{{route('appoint.store')}}">
+    <form id="myForm" method="get" action="{{ url(route('appoint.store')) }}">
         @csrf
 
         <!-- section 1 -->

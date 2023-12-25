@@ -17,7 +17,7 @@
 
     <div class="container">
         <h1 class="p-5">Staff Form</h1>
-        <form class="row g-3" action="{{ route('staff.store') }}">
+        <form class="row g-3" action="{{ url(route('staff.store')) }}">
             <div class="col-4">
                 <label for="title" class="form-label"> Title</label>
                 <select id="title" name="title" class="form-select">

@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <form action="{{ route('storedoctor') }}" action="get" enctype="multipart/form-data">
+                    <form action="{{ url(route('storedoctor')) }}" action="get" enctype="multipart/form-data">
                         @csrf
                         <label class="form-group" for="image">Profile Photo:</label>
                         <input class="form-control" type="file" name="image">
