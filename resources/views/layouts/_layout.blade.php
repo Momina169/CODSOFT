@@ -9,7 +9,7 @@
     <script rel="jquery" src="{{secure_asset('/jquery_3.6.4_jquery.min.js')}}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="{{secure_asset('/css_bootstrap.min.css')}}">
-
+    <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
     <script src="{{ secure_asset('path/to/bootstrap.bundle.min.js') }}"></script>
 
     <link rel="stylesheet" href="{{secure_asset('/style.css')}}">
