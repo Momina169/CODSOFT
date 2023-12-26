@@ -9,7 +9,7 @@
     <script rel="jquery" src="{{secure_asset('/jquery_3.6.4_jquery.min.js')}}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="{{secure_asset('/css_bootstrap.min.css')}}">
-    <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <!-- <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" /> -->
     <script src="{{ secure_asset('path/to/bootstrap.bundle.min.js') }}"></script>
 
     <link rel="stylesheet" href="{{secure_asset('/style.css')}}">
@@ -19,10 +19,10 @@
     <link href="{{secure_asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
      <!-- Secure Links -->
-     <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
-    <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
-    <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
-    <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script>
+     <!-- <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" /> -->
+    <!-- <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" /> -->
+    <!-- <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" /> -->
+    <!-- <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script> -->
     <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
 
 </head>
