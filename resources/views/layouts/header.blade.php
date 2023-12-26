@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('/css_bootstrap.min.css')}}">
-    <script rel="jquery" src="{{asset('/jquery_3.6.4_jquery.min.js')}}"></script>
+    <link rel="stylesheet" href="{{secure_asset('/css_bootstrap.min.css')}}">
+    <script rel="jquery" src="{{secure_asset('/jquery_3.6.4_jquery.min.js')}}"></script>
     <style>
         .nav-link{
             color: black;
@@ -20,7 +20,7 @@
         <div class="container">
             <!-- Logo on the left -->
             <a class="navbar-brand" href="#">
-                <img src="{{asset('images/logo.png')}}" width="60px" height="60px">
+                <img src="{{secure_asset('images/logo.png')}}" width="60px" height="60px">
                 <b style="color: #00B4CC;"><i>Medical Haven</i></b>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -136,8 +136,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>
-    <script src="{{asset('/cdn.jsdelivr.net_npm.js')}}"></script>
-    <script src="{{asset('/js_bootstrap.min.js')}}"></script>
+    <script src="{{secure_asset('/cdn.jsdelivr.net_npm.js')}}"></script>
+    <script src="{{secure_asset('/js_bootstrap.min.js')}}"></script>
 </body>
 
 </html>
