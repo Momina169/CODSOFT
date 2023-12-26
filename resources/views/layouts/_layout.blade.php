@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{secure_asset('/style.css')}}">
 
     <!-- Favicons -->
-    <link href="{{secure-asset('assets/img/favicon.png')}}" rel="icon">
+    <link href="{{secure_asset('assets/img/favicon.png')}}" rel="icon">
     <link href="{{secure_asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
      <!-- Secure Links -->
