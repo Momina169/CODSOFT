@@ -5,26 +5,26 @@
     <meta charset="UTF-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/275c3c76a3.js" crossorigin="anonymous"></script>
-
-    <!-- Preconnect and Preload Stylesheets -->
+    <script rel="jquery" src="{{secure_asset('/jquery_3.6.4_jquery.min.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{secure_asset('/css_bootstrap.min.css')}}">
     <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
-    <link rel="stylesheet" href="{{ secure_asset('/css_bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ secure_asset('/style.css') }}" />
-
-    <!-- Bootstrap Bundle Script -->
     <script src="{{ secure_asset('path/to/bootstrap.bundle.min.js') }}"></script>
 
-    <!-- jQuery Script -->
-    <script rel="jquery" src="{{ secure_asset('/jquery_3.6.4_jquery.min.js') }}"></script>
+    <link rel="stylesheet" href="{{secure_asset('/style.css')}}">
 
     <!-- Favicons -->
-    <link href="{{ secure_asset('assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ secure_asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{secure-asset('assets/img/favicon.png')}}" rel="icon">
+    <link href="{{secure_asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
-    <!-- Preload JavaScript Module -->
+     <!-- Secure Links -->
+     <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
     <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script>
+    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
+
 </head>
 
 <body>
