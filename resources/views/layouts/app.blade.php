@@ -7,27 +7,27 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Management System</title>
     <title>{{ config('app.name', 'Management System') }}</title>
-    <!-- <script src="https://kit.fontawesome.com/275c3c76a3.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/275c3c76a3.js" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.bunny.net"> -->
-    <!-- <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <!-- <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" /> -->
-    <!-- <script rel="jquery" src="{{ secure_asset('/jquery_3.6.4_jquery.min.js') }}"></script> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="{{ secure_asset('/css_bootstrap.min.css') }}"> -->
-    <!-- <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}"> -->
+    <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <script rel="jquery" src="{{ secure_asset('/jquery_3.6.4_jquery.min.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ secure_asset('/css_bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
 
      <!-- Secure Links -->
-     <!-- <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" /> -->
-    <!-- <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" /> -->
-    <!-- <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" /> -->
-    <!-- <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script> -->
-    <!-- <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}"> -->
+     <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script>
+    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
 
     <style>
         .admin-sidebar{

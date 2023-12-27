@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     </style>
 </head>
 
-<body> -->
+<body>
 
 
     <nav class="navbar navbar-expand-lg shadow-lg sticky-top bg-white">
