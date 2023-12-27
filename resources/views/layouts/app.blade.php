@@ -20,8 +20,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-    <link rel="preload"  href="{{ secure_asset('build/assets/app-e802707b.css') }}" as="style" />
-    <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js')  }}"  as="script"/>
+   
     <style>
     .admin-sidebar {
         max-width: 20%;
