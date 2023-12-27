@@ -9,7 +9,10 @@
     <title>{{ config('app.name', 'Management System') }}</title>
 
     <script src="https://kit.fontawesome.com/275c3c76a3.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link href="{{ secure_asset('images/logo.png') }}" rel="icon">
@@ -18,15 +21,10 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     
-    <link rel="stylesheet"  href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+    <!-- <link rel="stylesheet"  href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
     <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
     <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
-    <link rel="module" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
-
-    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('style.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="module" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" /> -->
     <style>
     .admin-sidebar {
         max-width: 20%;
@@ -47,8 +45,8 @@
 
     <div class="row">
         <div class="col-sm-12 col-md-3 col-lg-3 admin-sidebar">
-            <nav class="navbar navbar-expand-lg d-flex flex-column  navbar-light" >
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar"
+            <nav class="navbar navbar-expand-lg d-flex flex-column  -light" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar"
                     aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
