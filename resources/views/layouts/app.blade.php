@@ -7,26 +7,22 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Management System</title>
     <title>{{ config('app.name', 'Management System') }}</title>
+
     <script src="https://kit.fontawesome.com/275c3c76a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link href="{{ secure_asset('images/logo.png') }}" rel="icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
-    <script rel="jquery" src="{{ secure_asset('/jquery_3.6.4_jquery.min.js') }}"></script>
-    <link rel="stylesheet" href="{{ secure_asset('/css_bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
-
-     <!-- Secure Links -->
-     <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
-    <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
-    <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
-    <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script>
-    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
 
     <style>
         .admin-sidebar{
@@ -150,9 +146,6 @@
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 
-    <!-- Include other scripts -->
-    <script src="{{ secure_asset('cdn.jsdelivr.net_npm.js') }}"></script>
-    <script src="{{ secure_asset('js_bootstrap.min.js') }}"></script>
     <script src="{{ secure_asset('sidebars.js') }}"></script>
 </body>
 
