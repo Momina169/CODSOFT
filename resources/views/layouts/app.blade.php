@@ -57,7 +57,7 @@
                         </a>
                         <hr>
                         <li class="nav-item">
-                            <a href="{{ route('dashboard') }}" class="nav-link" aria-current="page">
+                            <a href="{{ route('dashboard') }}" class="nav-link link-dark" aria-current="page">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#home" />
                                 </svg>
@@ -65,7 +65,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('doctorcrud') }}" class="nav-link" aria-current="page">
+                            <a href="{{ route('doctorcrud') }}" class="nav-link link-dark" aria-current="page">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#" />
                                 </svg>

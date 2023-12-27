@@ -1,5 +1,6 @@
-@extends('layouts._layout')
-@section('content')
+<x-app-layout>
+<link rel="stylesheet"  href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
+
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Profile') }}
@@ -27,4 +28,4 @@
             </div>
         </div>
     </div>
-@endsection
+</x-app-layout>
