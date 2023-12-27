@@ -12,20 +12,16 @@
     <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('style.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
-    <!-- <link rel="stylesheet"  href="{{ secure_asset('build/assets/app-e802707b.css') }}" /> -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link href="{{ secure_asset('images/logo.png') }}" rel="icon">
+    <link href="{{ secure_asset('images/logo.png') }}" height="20px" rel="icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     
-    <!-- <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
-    <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
-    <link rel="module" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" /> -->
+   
     <style>
     .admin-sidebar {
         max-width: 20%;
@@ -34,12 +30,6 @@
 </head>
 
 <body class="font-sans">
-
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Admin Dashboard') }}
-        </h2>
-    </x-slot>
 
 
     <div class="row">
@@ -61,15 +51,23 @@
                             <img class="d-flex justify-content-center mb-3 mb-md-0 m-2"
                                 src="{{ secure_asset('images/logo.png') }}" width="90px" height="auto">
                         </a>
-
+                        
                         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 m-2 link-dark text-decoration-none">
                             <span class="fs-4">Medical Haven</span>
                         </a>
                         <hr>
                         <li class="nav-item">
-                            <a href="{{ route('doctorcrud') }}" class="nav-link" aria-current="page">
+                            <a href="{{ route('dashboard') }}" class="nav-link" aria-current="page">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#home" />
+                                </svg>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('doctorcrud') }}" class="nav-link" aria-current="page">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#" />
                                 </svg>
                                 Doctors
                             </a>
