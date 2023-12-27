@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     </style>
 </head>
 
-<body>
+<body> -->
 
 
     <nav class="navbar navbar-expand-lg shadow-lg sticky-top bg-white">
@@ -133,11 +133,11 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>
     <script src="{{secure_asset('/cdn.jsdelivr.net_npm.js')}}"></script>
     <script src="{{secure_asset('/js_bootstrap.min.js')}}"></script>
 </body>
 
-</html>
+</html> -->
