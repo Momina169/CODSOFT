@@ -1,4 +1,5 @@
-<x-app-layout>
+@extends(layouts._layout)
+@section('content')
 <link rel="stylesheet"  href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
 
     <x-slot name="header">
@@ -28,4 +29,4 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+@endsection
