@@ -9,56 +9,19 @@ use App\Http\Controllers\DocterDataController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 
-// ********************* FRONTEND ROUTES ****************
+// ======== Frontend Routes ===========
 Route::get('/', function () {
-    return view('/index');
+    return view ('/index');
 })->middleware(['auth', 'verified'])->name('index');
 
-
-Route::get('/contact2', function () {
-    return view('contact2');
-})->middleware(['auth', 'verified']);
-
-Route::get('/doctors', function () {
-    return view('doctors');
-})->middleware(['auth', 'verified']);
-
-Route::get('/firstlearnmore', function () {
-    return view('firstlearnmore');
-})->middleware(['auth', 'verified']);
-
-Route::get('/index', function () {
-    return view('index');
-})->middleware(['auth', 'verified'])->name('index');
 
 Route::get('/lab-attendend', function () {
     return view('lab-attendend');
 })->middleware(['auth', 'verified']);
 
-Route::get('/labs', function () {
-    return view('labs');
-})->middleware(['auth', 'verified']);
-
-Route::get('/mission', function () {
-    return view('mission');
-})->middleware(['auth', 'verified']);
-
-Route::get('/nurses', function () {
-    return view('nurses');
-})->middleware(['auth', 'verified']);
-
-Route::get('/opd', function () {
-    return view('opd');
-})->middleware(['auth', 'verified']);
-
-Route::get('/vision', function () {
-    return view('vision');
-})->middleware(['auth', 'verified']);
-
 
 Route::view('/contact','contact')->middleware(['auth', 'verified'])->name('contact');
 Route::view('/doctors','doctors')->middleware(['auth', 'verified'])->name('doctors');
-Route::view('/find doctors','find doctor')->middleware(['auth', 'verified'])->name('find doctor');
 Route::view('/firstlearnmore','firstlearnmore')->middleware(['auth', 'verified'])->name('firstlearnmore');
 Route::view('/sweepers','sweepers')->middleware(['auth', 'verified'])->name('sweepers');
 Route::view('/labs','labs')->middleware(['auth', 'verified'])->name('labs');
@@ -70,24 +33,12 @@ Route::view('/surgries','surgries')->middleware(['auth', 'verified'])->name('sur
 Route::view('/welcome','welcome')->middleware(['auth', 'verified'])->name('welcome');
 
 
-
-Route::get('register', function () {
-    return view('/register');
-})->name('register');
-
 Route::get('admindashboard', function () {
     return view('/admin.admindashboard');
 })->middleware(['auth', 'verified', 'admin'])->name('admindashboard');
 
-Route::get('users', function () {
-    return view('/admin.user');
-})->middleware(['auth', 'verified', 'admin'])->name('users');
 
-Route::get('/success', function () {
-    return view('checkout.success');
-})->middleware(['auth', 'verified', 'admin']);
-
-//********************************* BACKEND *******************************/
+// ============ Login/ Register ============
 
 Route::get('register', function () {
     return view('/register');
@@ -97,9 +48,6 @@ Route::get('login', function () {
     return view('/auth.login');
 })->middleware(['auth', 'verified', 'admin'])->name('login');
 
-Route::get('/success', function () {
-    return view('checkout.success');
-})->middleware(['auth', 'verified', 'admin']);
 
 
 // ========= Appointment routes =============
@@ -121,7 +69,6 @@ Route::get('/get-doctor-breakdown',[AppointmentController::class,'getDoctorBreak
 Route::get('/appoint/create', [AppointmentController::class,'checkEmailValidity']);
 
 //============ Staff Routes ===========
-
 Route::prefix('staff')->group(function(){
     Route::get('/',[StaffController::class,'index'])->middleware(['auth', 'verified', 'admin'])->name('staff.index');
     Route::get('/create',[StaffController::class,'create'])->middleware(['auth', 'verified', 'admin'])->name('staff.create');
