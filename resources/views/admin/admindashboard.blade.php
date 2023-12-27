@@ -6,7 +6,7 @@
         </h2>
     </x-slot>
 
-    <h1 class="mx-auto fs-1" style="color:brown;">Hospital Management System</h1>
+    <h1 class="my-auto fs-1" style="color:brown;">Hospital Management System</h1>
     <div class="row g-5" >
 
         <div class="col-6">
