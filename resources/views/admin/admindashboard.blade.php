@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="col-6 gy-2" >
+        <div class="col-6 " >
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top"  src="{{secure_asset('/images/users.png')}}" alt="doctors">
                 <div class="card-body">
