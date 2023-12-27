@@ -203,6 +203,7 @@
     margin: 0 auto;
 }
 </style>
+
 <section class="image-section">
     <div class="image-slider">
         <img src=" {{ secure_asset('images/1.jpg')}}" alt="Image 1">
