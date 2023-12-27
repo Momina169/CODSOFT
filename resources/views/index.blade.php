@@ -1,30 +1,8 @@
+@extends('layouts._layout')
+@section('content')
 
-<style>
-    /* navigation bar start*/
-  .custom-nav a{
-    color: #00B4CC;
-  }
-  .text-sky{
-  color: #00B4CC;
-  }
-  .custom-nav a:hover{
-    color:#16c9e1;
-  }
-
-  .custom1-nav{
-    background-color: #00B4CC;
-  }
-  .custom1-nav:hover{
-    background-color: #16c9e1;
-
-  }
-  .custom1-nav a:hover{
-    color:white;
-  }
-
-  /* navigation bar end */
-
-    .image-section {
+ <style>
+  .image-section {
     text-align: center;
     background-color: #f5f5f5;
     opacity: 0.8;
@@ -219,10 +197,6 @@
     }
 
 </style>  
-
-@extends('layouts._layout')
- @section('content')
-<!-- body -->
 <section class="image-section">
     <div class="image-slider">
       <img src="images/1.jpg" alt="Image 1">
