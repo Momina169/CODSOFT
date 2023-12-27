@@ -90,7 +90,6 @@
 
 .hospital-section {
     padding: 5rem 0;
-    background-image: url('images/download.jfif');
     background-size: cover;
 }
 
