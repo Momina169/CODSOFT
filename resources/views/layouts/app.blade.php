@@ -57,7 +57,7 @@
 
 
 
-                    <div class="collapse navbar-collapse" id="sidebar">
+                    <div  id="sidebar">
 
                         <ul class="nav nav-pills flex-column mb-auto ">
                             <!-- Logo -->
