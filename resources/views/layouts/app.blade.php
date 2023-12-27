@@ -45,91 +45,93 @@
 
     <div class="row">
         <div class="col-sm-12 col-md-3 col-lg-3 admin-sidebar">
-            <nav class="navbar navbar-expand-lg d-flex flex-column  bg-light" style=" ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar"
-                    aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar"
+        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="sidebar">
+        <ul class="navbar-nav flex-column mb-auto">
+            <!-- Logo -->
+            <a href="{{ route('dashboard') }}" class="navbar-brand">
+                <img src="{{ secure_asset('images/logo.png') }}" width="90px" height="auto" class="mb-2">
+            </a>
 
+            <!-- Site Name -->
+            <a href="/" class="nav-link d-flex align-items-center link-dark text-decoration-none">
+                <span class="fs-4">Medical Haven</span>
+            </a>
+            <hr>
 
-                <div class="collapse navbar-collapse" id="sidebar">
+            <!-- Menu Items -->
+            <li class="nav-item">
+                <a href="{{ route('doctorcrud') }}" class="nav-link">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#home" />
+                    </svg>
+                    Doctors
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('appoint.index') }}" class="nav-link">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2" />
+                    </svg>
+                    Appointments
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('users') }}" class="nav-link">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#table" />
+                    </svg>
+                    Roles/Users
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('staff.index') }}" class="nav-link">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#grid" />
+                    </svg>
+                    Staff
+                </a>
+            </li>
+            <hr>
 
-                    <ul class="nav nav-pills flex-column mb-auto ">
-                        <!-- Logo -->
+            <!-- User Dropdown -->
+            <div class="dropdown mt-5">
+                <a class="nav-link dropdown-toggle btn d-flex align-items-center link-dark text-decoration-none"
+                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="font-medium text-base text-gray-800 dark:text-gray-200">
+                        {{ Auth::user()->name }}
+                    </div>
+                    <div class="font-medium text-sm text-gray-500 " hidden>
+                        {{ Auth::user()->email }}
+                    </div>
+                </a>
 
-                        <a href="{{ route('dashboard') }}">
-                            <img class="d-flex justify-content-center mb-3 mb-md-0 m-2"
-                                src="{{ secure_asset('images/logo.png') }}" width="90px" height="auto">
-                        </a>
+                <ul class="dropdown-menu">
+                    <li class="nav-item">
+                        <a class="dropdown-item ms-2" href="{{ route('profile.edit') }}">Profile</a>
+                    </li>
 
-                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 m-2 link-dark text-decoration-none">
-                            <span class="fs-4">Medical Haven</span>
-                        </a>
-                        <hr>
+                    <!-- Logout Form -->
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
                         <li class="nav-item">
-                            <a href="{{ route('doctorcrud') }}" class="nav-link" aria-current="page">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#home" />
-                                </svg>
-                                Doctors
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault(); this.closest('form').submit();">
+                                {{ __('Log Out') }}
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ route('appoint.index') }}" class="nav-link link-dark">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#speedometer2" />
-                                </svg>
-                                Appointments
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('users') }}" class="nav-link link-dark">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#table" />
-                                </svg>
-                                Roles/Users
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('staff.index') }}" class="nav-link link-dark">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#grid" />
-                                </svg>
-                                Staff
-                            </a>
-                        </li>
-                        <hr>
-                        <div class=" dropdown mt-5">
-                            <a class="nav-link dropdown-toggle btn d-flex align-items-center link-dark text-decoration-none "
-                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="font-medium text-base text-gray-800 dark:text-gray-200">
-                                    {{ Auth::user()->name }}
-                                </div>
-                                <div class="font-medium text-sm text-gray-500 " hidden>
-                                    {{ Auth::user()->email }}
-                                </div>
-                            </a>
+                    </form>
+                </ul>
+            </div>
+        </ul>
+    </div>
+</nav>
 
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="dropdown-item ms-2 "
-                                        href="{{ route('profile.edit') }}">Profile'</a>
-                                </li>
-
-                                <!-- Authentication -->
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-                                    <li class="nav-item"><a class="dropdown-item" href="{{ route('logout') }}">
-                                            <x-responsive-nav-link :href="route('logout')" onclick="event.preventDefault();
-                            this.closest('form').submit();">
-                                                {{ __(' Log Out') }}
-                                            </x-responsive-nav-link>
-                                        </a></li>
-                                </form>
-                            </ul>
-                        </div>
-            </nav>
 
         </div>
 
