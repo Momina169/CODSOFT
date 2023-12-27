@@ -14,9 +14,6 @@
   .custom1-nav{
     background-color: #00B4CC;
   }
-  .custom1-nav a{
-    color:white;
-  }
   .custom1-nav:hover{
     background-color: #16c9e1;
 
@@ -66,8 +63,6 @@
   }
 
   .card:hover {
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    /* box-shadow: 0 4px 6px rgba(0, 128, 128, 0.5);  */
     box-shadow: 0 4px 10px 2px rgba(0, 128, 128, 0.7); /* x-offset, y-offset, blur radius, spread, color */
     background-color: white;
   }
@@ -114,7 +109,6 @@
     }
       .hospital-section {
     padding: 5rem 0;
-    /* background: linear-gradient(135deg, #00B4CC 40%, white 50%, #ff4701 10%); */
     background-image: url('images/download.jfif');
     background-size:cover ;
   }
@@ -154,7 +148,6 @@
   }
   .about-section {
     padding: 4rem 0;
-    /* background: linear-gradient(135deg, #00B4CC 40%, white 50%, #ff4701 10%); */
   }
 
   .about-content {
@@ -201,27 +194,27 @@
   .hospital-image:hover,
   .hospital-content:hover {
     transform: scale(1.05); 
-    box-shadow: 0 4px 6px rgba(0, 128, 128, 0.5); /* x-offset, y-offset, blur radius, color */
-    background-color: white;/* Adjust the scale factor for the zoom level */
+    box-shadow: 0 4px 6px rgba(0, 128, 128, 0.5);  
+    background-color: white; 
   }
 
   .service-image {
-      margin: 10px; /* Add some margin to separate images */
-      display: inline-block; /* Display images in a row */
-      position: relative; /* Allow positioning within the container */
-      transition: transform 0.3s ease-in-out; /* Add a smooth animation on hover */
+      margin: 10px;  
+      display: inline-block;  
+      position: relative;  
+      transition: transform 0.3s ease-in-out;  
     }
 
     .service-image:hover {
-      transform: scale(1.1); /* Zoom in slightly on hover */
+      transform: scale(1.1);  
     }
     .col-lg-2 {
-      text-align: center; /* Center-align text */
-      margin-top: 20px; /* Add some top margin to the text */
+      text-align: center;  
+      margin-top: 20px;  
     }
 
     .col-lg-2 img {
-      display: block; /* Ensure images are centered horizontally */
+      display: block;    
       margin: 0 auto;
     }
 
