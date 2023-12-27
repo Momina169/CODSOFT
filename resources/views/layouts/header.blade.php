@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{secure_asset('/css_bootstrap.min.css')}}">
-    <script rel="jquery" src="{{secure_asset('/jquery_3.6.4_jquery.min.js')}}"></script>
+    <script rel="jquery" src="{{secure_asset('/jquery_3.6.4_jquery.min.js')}}"></script> -->
     <style>
         .nav-link{
             color: black;
