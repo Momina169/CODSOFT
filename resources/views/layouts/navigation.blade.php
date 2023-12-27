@@ -23,7 +23,7 @@
                 </a>
 
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{{ route(profile.edit) }}">Profile</a></li>
+                    <li><a class="dropdown-item" href="{{ route(profile.edit) }}">  {{ __('Profile') }}</a></li>
 
                     <!-- Authentication -->
                     <form method="POST" action="{{ route('logout') }}">
