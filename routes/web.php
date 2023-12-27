@@ -59,11 +59,8 @@ Route::prefix('appoint')->group(function(){
     Route::get('/deleteappoint/{id}',[AppointmentController::class,'deleteappoint'])->middleware(['auth', 'verified', 'admin'])->name('deleteappoint');
     Route::get('/detail/{id}',[AppointmentController::class,'detail'])->middleware(['auth', 'verified', 'admin'])->name('appoint.detail');
 });
-Route::get('/appointedit/{id}',[AppointmentController::class,'appointedit'])->middleware(['auth', 'verified', 'admin'])->name('appoint.edit');
 Route::get('/updateappoint',[AppointmentController::class,'appointupdate'])->middleware(['auth', 'verified', 'admin'])->name('appointupdate');
-Route::get('/deleteappoint/{id}',[AppointmentController::class,'deleteappoint'])->middleware(['auth', 'verified', 'admin'])->name('deleteappoint');
 Route::get('/detail/{id}',[AppointmentController::class,'detail'])->middleware(['auth', 'verified', 'admin'])->name('appoint.detail');
-Route::get('/get-doctor-breakdown',[AppointmentController::class,'getDoctorBreakdown']);
   
 
 Route::get('/appoint/create', [AppointmentController::class,'checkEmailValidity']);
@@ -100,6 +97,7 @@ Route::get('/DeleteDoctor/{id}', [DocterDataController::class, 'destroy'])->midd
 Route::get('/findDoctor', [DocterDataController::class, 'finddoctor'])->middleware(['auth', 'verified'])->name('finddoctor');
 Route::get('/doctor/{id}', [DocterDataController::class, 'show'])->middleware(['auth', 'verified', 'admin'])->name('showdoctor');
 Route::get('/doctors/{department}', [DocterDataController::class, 'filterByCategory']);
+Route::get('/get-doctor-breakdown',[AppointmentController::class,'getDoctorBreakdown']);
 
 
 // ========== Admin Panel ==========
