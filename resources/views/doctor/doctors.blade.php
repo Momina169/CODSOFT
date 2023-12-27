@@ -414,9 +414,6 @@
         });
     </script>
 
-<script src="{{ secure_asset('js_bootstrap.bundle.min.js') }}"></script>
-
-
 
 
 </x-app-layout>
