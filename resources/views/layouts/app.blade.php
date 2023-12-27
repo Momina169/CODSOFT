@@ -9,10 +9,7 @@
     <title>{{ config('app.name', 'Management System') }}</title>
 
     <script src="https://kit.fontawesome.com/275c3c76a3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('style.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 
     <!-- Favicons -->
     <link href="{{ secure_asset('images/logo.png') }}" rel="icon">
@@ -25,6 +22,11 @@
     <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
     <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
     <link rel="module" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" />
+
+    <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
     .admin-sidebar {
         max-width: 20%;
