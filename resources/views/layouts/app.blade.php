@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/275c3c76a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicons -->
@@ -19,10 +20,6 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
 
     <style>
         .admin-sidebar{

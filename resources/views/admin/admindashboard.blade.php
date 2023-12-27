@@ -7,7 +7,7 @@
     </x-slot>
 
     <h1 style="color:brown;">Hospital Management System</h1>
-    <div class="row mt-5" >
+    <div class="row g-5" >
 
         <div class="col-6">
             <div class="card" style="width: 18rem;">
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="col-6 mt-2" >
+        <div class="col-6 gy-2" >
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top"  src="{{secure_asset('/images/users.png')}}" alt="doctors">
                 <div class="card-body">
