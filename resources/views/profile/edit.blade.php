@@ -1,4 +1,4 @@
-@extends(layouts._layout)
+@extends('layouts._layout')
 @section('content')
 <link rel="stylesheet"  href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
 
