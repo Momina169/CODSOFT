@@ -66,17 +66,11 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('doctorcrud') }}" class="nav-link link-dark" aria-current="page">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#" />
-                                </svg>
                                 Doctors
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('appoint.index') }}" class="nav-link link-dark">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#speedometer2" />
-                                </svg>
                                 Appointments
                             </a>
                         </li>
@@ -90,18 +84,12 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('staff.index') }}" class="nav-link link-dark">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#grid" />
-                                </svg>
                                 Staff
                             </a>
                         </li>
                         <hr>
                         <li class="nav-item">
                             <a href="{{ route('index') }}" class="nav-link link-dark">
-                                <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#grid" />
-                                </svg>
                                 Home
                             </a>
                         </li>
@@ -125,7 +113,7 @@
                                 <!-- Authentication -->
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
-                                    <li class="nav-item"><a class="dropdown-item" href="{{ route('logout') }}">
+                                    <li class="nav-item"><a class="dropdown-item ms-2" href="{{ route('logout') }}">
                                             <x-responsive-nav-link :href="route('logout')" onclick="event.preventDefault();
                             this.closest('form').submit();">
                                                 {{ __(' Log Out') }}
