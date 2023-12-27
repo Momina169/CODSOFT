@@ -1,3 +1,5 @@
+<title>{{ config('app.name', 'Login') }}</title>
+    
 <x-guest-layout>
     
     <!-- Session Status -->

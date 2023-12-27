@@ -1,3 +1,5 @@
+<title>{{ config('app.name', 'Register') }}</title>
+
 <x-guest-layout>
     <form method="POST" action="{{ url(route('register')) }}">
         @csrf

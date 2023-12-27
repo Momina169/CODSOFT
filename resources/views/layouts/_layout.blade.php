@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
     <script type="module" src="{{ secure_asset('build/assets/app-4a08c204.js') }}"></script>
     <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
-
 </head>
 
 <body>
