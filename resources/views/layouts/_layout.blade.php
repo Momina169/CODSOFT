@@ -12,6 +12,7 @@
 
     <!-- Favicons -->
     <link href="{{ secure_asset('images/logo.png') }}" rel="icon">
+
     <!-- <link rel="preload" as="style" href="{{ secure_asset('build/assets/app-e802707b.css') }}" />
     <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js') }}" /> -->
 </head>

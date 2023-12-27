@@ -9,6 +9,7 @@
     <title>{{ config('app.name', 'Management System') }}</title>
 
     <script src="https://kit.fontawesome.com/275c3c76a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="{{ secure_asset('build/assets/app-e802707b.css') }}" as="style" />
     <link rel="stylesheet" href="{{ secure_asset('css_bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('style.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('/sidebars.css') }}">
@@ -20,6 +21,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="modulepreload" href="{{ secure_asset('build/assets/app-4a08c204.js')  }}"  as="script"/>
    
     <style>
     .admin-sidebar {
