@@ -10,10 +10,13 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 
 // ======== Frontend Routes ===========
-Route::get('/', function () {
-    return view ('/');
+Route::get('/index', function () {
+    return view ('/index');
 })->middleware(['auth', 'verified'])->name('index');
 
+Route::get('/', function () {
+    return view ('/index');
+})->middleware(['auth', 'verified']);
 
 Route::get('/lab-attendend', function () {
     return view('lab-attendend');
