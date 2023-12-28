@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\docterData;
+use App\Models\DocterData;
 use App\Models\Schedule;
 use App\Models\Education;
 use App\Models\Experience;
@@ -12,20 +12,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 
-class docterDataController extends Controller
+class DocterDataController extends Controller
 {
     //show doctor in appointment
     
     public function index()
     {
-        $doctor = docterData::all();
+        $doctor = DocterData::all();
         $departments = Deppartment::get();
         return view('/doctor.doctors', compact('doctor', 'departments'));
         
     }
 
     public function finddoctor(){
-        $doctor = docterData::all();
+        $doctor = DocterData::all();
         $departments = Deppartment::all();
         return view('finddoctors.findDoctor', compact('doctor', 'departments'));
         
@@ -33,7 +33,7 @@ class docterDataController extends Controller
     
     public function filterByCategory($department)
     {
-        $doctors = docterData::where('deppartments_id', $department)->get();
+        $doctors = DocterData::where('deppartments_id', $department)->get();
         $departments = Deppartment::get();
         return view('finddoctors.filtered', compact('doctors', 'departments'));
     }
@@ -51,11 +51,11 @@ class docterDataController extends Controller
             $doctor = $request->file('image');
             $imageName = time() . '.' . $doctor->getClientOriginalExtension();
             $doctor->move(public_path('images'), $imageName);
-            docterData::create(['path' => 'images/' . $imageName]);
+            DocterData::create(['path' => 'images/' . $imageName]);
             }
 
     
-        $doctor = docterData::create([
+        $doctor = DocterData::create([
         'image' => $request->input('image'),
         'DoctorName' => $request->input('DoctorName'),
         'age' => $request->input('age'),
@@ -69,7 +69,7 @@ class docterDataController extends Controller
         'deppartments_id' => $request->input('deppartments_id'),
         ]);
     
-        $emailExists = docterData::where('email', $request->email)->exists();
+        $emailExists = DocterData::where('email', $request->email)->exists();
 
        if ($emailExists) {
            return redirect()->back()->withInput()->withErrors(['email' => 'The email address is already in use.']);
@@ -148,7 +148,7 @@ class docterDataController extends Controller
 }
     
 public function details($id){
-    $doctor = docterData::find($id);
+    $doctor = DocterData::find($id);
     $schedules = $doctor->schedules()->Select('docter_data_id', 'date', 'time')->get();
     $experience = $doctor->experiences()->Select('docter_data_id','jobTitle' , 'company', 'Industry', 'Location')->get();
     $education = $doctor->educations()->Select('docter_data_id','degTitle', 'degName', 'university', 'city')->get();
@@ -162,12 +162,12 @@ public function details($id){
  public function show($id)
 {
     
-    // $doctor = docterData::where(function ($query) use ($id) {
+    // $doctor = DocterData::where(function ($query) use ($id) {
     //     $query->where('id', $id)
     //           ->orWhere('name', $id);
     // })->first();
 
-    $doctor = docterData::find($id);
+    $doctor = DocterData::find($id);
     $schedules = $doctor->schedules()->Select('docter_data_id', 'date', 'time')->get();
     $experience = $doctor->experiences()->Select('docter_data_id','jobTitle' , 'company', 'Industry', 'Location')->get();
     $education = $doctor->educations()->Select('docter_data_id','degTitle', 'degName', 'university', 'city')->get();
@@ -183,20 +183,20 @@ public function details($id){
     
 
    
-    public function edit(docterData $doctors)
+    public function edit(DocterData $doctors)
     {
         //
     }
 
     
-    public function update(Request $request, docterData $doctors)
+    public function update(Request $request, DocterData $doctors)
     {
     
     }
 
     public function destroy($id)
     {
-        $id = docterData::find($id);
+        $id = DocterData::find($id);
         $id->delete();
         return redirect()->route('doctorcrud');
         
