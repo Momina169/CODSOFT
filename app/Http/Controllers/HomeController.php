@@ -21,7 +21,7 @@ class HomeController extends Controller
         
             }
             else if($usertype== 'user' ){
-                return view('/index');
+                return view('/');
             }
             
             else{
