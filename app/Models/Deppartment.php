@@ -11,6 +11,6 @@ class Deppartment extends Model
     protected $fillable = ["DepartmentName"];
 
     public function docterdata(){
-        return $this->hasMany(DocterData::class, 'deppartments_id', 'id');
+        return $this->hasMany(docterData::class, 'deppartments_id', 'id');
     }
 }

@@ -17,6 +17,6 @@ class Experience extends Model
         'docter_data_id'
     ];
     public function docterdata(){
-        return $this->belongsto(DocterData::class);
+        return $this->belongsto(docterData::class);
     }
 }
