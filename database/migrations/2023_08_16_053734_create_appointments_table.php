@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('gender');
             $table->string('email')->unique();
             $table->integer('zipcode');
-            $table->integer('phonenumber');
+            $table->bigInteger('phonenumber');
             $table->string('streetaddress');
             $table->string('state');
             $table->string('city');

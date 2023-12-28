@@ -13,7 +13,7 @@
             <div class="col-lg-3">
                 <img src="{{secure_asset('images/'. $doctor->image)}}" alt="" Style="border-radius: 50%;" height="260" width="260">
             </div>
-            <div class="col-lg-9 pt-5 mt-5">
+            <div class="col-lg-9 pt-5 ps-2 mt-5">
                 <div class="text-danger fs-5" style="letter-spacing: 2px;">{{$doctor->speciality}}</div>
                 <div class="h1 font-weight-bold">{{$doctor->DoctorName}}</div>
             </div>

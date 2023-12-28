@@ -20,6 +20,7 @@
                 </div>
                 <div class="col-6 gy-5">
                     <form action="{{ url(route('session'))}}" method="get">
+                        @csrf
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     
                     <label for="name">Name</label><br>
@@ -27,7 +28,8 @@
 
                     <label for="name">Email</label><br>
                     <input type="text" name="email" placeholder="abc@gmail.com"><br><br>
-
+                    <p class="text-danger"> {{$errors->first('email')}}</p>
+                    
                     <label for="amount" class="text-danger">Total Amount</label><br>
                     <input class="p-3" type="number" value="25" readonly  name="total_amount"> Dollars<br>
                     <input type="submit" class="btn btn-primary mt-5" value="Checkout">

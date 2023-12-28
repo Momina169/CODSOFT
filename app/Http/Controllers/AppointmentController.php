@@ -107,22 +107,33 @@ class AppointmentController extends Controller
     }
 
     public function session(Request $request) {
+        request()->validate([
 
+            'email' => 'required|email|unique:appointments'
+        ]);
+        
         \Stripe\Stripe::setApiKey(config('stripe.sk'));
-    
+
         $username = $request->get('name');
         $emailid = $request->get('email');
         $total_amount = $request->get('total_amount');
-        $twozero = '00';
-        $total = $total_amount . $twozero;
-        
-        // Store data in the database
+    
+        // Check Email validity
+        $emailExists = checkout::where('email', $request->email)->exists();
+
+       if ($emailExists) {
+           return redirect()->back()->withInput()->withErrors(['email' => 'The email address is already in use.']);
+       }
+        // total amount to cents
+        $total_cents = $total_amount * 100;
+    
+        // Store data 
         $payment = new checkout;
         $payment->name = $username;
         $payment->email = $emailid;
         $payment->total_amount = $total_amount;
         $payment->save();
-
+    
         $session = \Stripe\Checkout\Session::create([
             'line_items' => [
                 [
@@ -130,21 +141,20 @@ class AppointmentController extends Controller
                         'currency' => 'USD',
                         'product_data' => [
                             'name' => $username,
-                            
                         ],
-                        'unit_amount' => $total,
+                        'unit_amount' => $total_cents,
                     ],
                     'quantity' => 1,
                 ],
             ],
             'mode' => 'payment',
-            // 'success_url' => route('success'),
-            'success_url' => route('checkout.success',  ['id' => $payment->id]),
+            'success_url' => route('checkout.success', ['id' => $payment->id]),
             'cancel_url' => route('checkout.cancel')
         ]);
     
         return redirect()->away($session->url);
     }
+    
     
 
     public function success($id)

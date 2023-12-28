@@ -99,7 +99,7 @@
 
 
                     <label for="phonenumber">Phone No</label><br>
-                    <input type="number" value="{{old('phonenumber')}}" id="phonenumber" name="phonenumber"
+                    <input type="tel" value="{{old('phonenumber')}}" id="phonenumber" name="phonenumber"
                         required><br>
                 </div>
             </div>
