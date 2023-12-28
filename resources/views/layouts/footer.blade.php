@@ -2,10 +2,10 @@
     <div class="d-flex justify-content-center align-items-center flex-column">
         <h3 class="fs-3 font-weight-bold my-2 text-info py-2"> Follow Us</h3>
         <ul class="footer-social list-unstyled">
-          <li class="d-inline px-2" ><a href="https://www.facebook.com/mominaijaz169"><i class="fa fa-facebook fs-4 btn btn-outline-light border rounded px-2 btn"></i></a></li>
-          <li class="d-inline px-2" ><a href="https://www.twitter.com/mominaijaz169"><i class="fa fa-twitter fs-4 btn btn-outline-light border rounded px-2 btn"></i></a></li>
-          <li class="d-inline px-2" ><a href="https://www.instagram.com/dev_momina"><i class="fa fa-instagram fs-4 btn btn-outline-light border rounded px-2 btn"></i></a></li>
-          <li class="d-inline px-2" ><a href="https://www.linkedin.com/in/mominaijaz"><i class="fa fa-linkedin fs-4 btn btn-outline-light border rounded px-2 btn"></i></a></li>
+          <li class="d-inline px-2" ><a href="https://www.facebook.com/mominaijaz169"  target="_blank"><i class="fa fa-facebook fs-4 btn btn-outline-light border rounded px-2 btn"></i></a></li>
+          <li class="d-inline px-2" ><a href="https://www.twitter.com/mominaijaz169" target="_blank"><i class="fa fa-twitter fs-4 btn btn-outline-light border rounded px-2 btn"></i></a></li>
+          <li class="d-inline px-2" ><a href="https://www.instagram.com/dev_momina" target="_blank"><i class="fa fa-instagram fs-4 btn btn-outline-light border rounded px-2 btn"></i></a></li>
+          <li class="d-inline px-2" ><a href="https://www.linkedin.com/in/mominaijaz" target="_blank"><i class="fa fa-linkedin fs-4 btn btn-outline-light border rounded px-2 btn"></i></a></li>
         </ul>
       </div><br> 
         <hr>

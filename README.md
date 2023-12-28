@@ -5,7 +5,7 @@
 The Admin Dashboard serves as the central hub for administrative tasks, empowering administrators to seamlessly manage hospital resources. This includes the ability to oversee and regulate the activities of hospital doctors, appointments, users, and their respective roles. The system facilitates streamlined management of staff within the hospital, providing a holistic view of personnel and their associated responsibilities. </p>
 
 <h4>Live Demo: </h4>
-<p> <a href="https://medicalhavenn-7870a4672f49.herokuapp.com/">Medical Haven </a> </p>
+<p> <a href="https://medicalhavenn-7870a4672f49.herokuapp.com/" target="_blank">Medical Haven </a> </p>
 
 <h2>Features</h2>
 <ul>
