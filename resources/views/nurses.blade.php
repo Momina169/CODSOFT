@@ -2,7 +2,7 @@
 @section('content')
 <style>
  .nurse {
-    background-image: url("secure_asset('images/Best Medical ServicE (Facebook Cover).png')");
+    background-image: url("{{secure_asset('images/Best Medical ServicE (Facebook Cover).png')}}");
     background-repeat: no-repeat;
     background-size: cover;
     height: 620px;
@@ -40,7 +40,7 @@
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1426370940-612x612.jpg')}}" class="card-img-top}}" alt="...">
+                        <img src="{{secure_asset('images/nurse1.jpg')}}" class="card-img-top}}" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE AMNA</h5>
                             <p class=""><span class="h6">Direct Patient Care:</span>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1403502149-612x612.jpg')}}" class="card-img-top" alt="..." >
+                        <img src="{{secure_asset('images/nurse2.jpg')}}" class="card-img-top" alt="..." >
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE MINAHIL</h5>
                             <p class=""><span class="h6">Assessment and Monitoring:</span>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1421919766-612x612.jpg')}}" class="card-img-top" alt="..." >
+                        <img src="{{secure_asset('images/nurse3.jpg')}}" class="card-img-top" alt="..." >
                         <div class="card-body ">
                             <h5 class="card-title text-danger">NURSE ALISHA</h5>
                             <p class=""><span class="h6">Patient Education:</span>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1328702718-612x612.jpg')}}" class="card-img-top" alt="..." >
+                        <img src="{{secure_asset('images/nurse4.jpg')}}" class="card-img-top" alt="..." >
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE KHADIJHA</h5>
                             <p class=""><span class="h6">Medication Administration:</span>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1425453867-612x612.jpg')}}" class="card-img-top" alt="..." >
+                        <img src="{{secure_asset('images/nurse5.jpg')}}" class="card-img-top" alt="..." >
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE HIZRA</h5>
                             <p class=""><span class="h6">Collaboration:</span>
@@ -111,7 +111,7 @@
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1211800286-612x612.jpg')}}" class="card-img-top" alt="..." >
+                        <img src="{{secure_asset('images/nurse6.jpg')}}" class="card-img-top" alt="..." >
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE DUAA</h5>
                             <p class=""><span class="h6">Documentation:</span>
@@ -125,7 +125,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-592406480-612x612.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{secure_asset('images/nurse7.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE FAIZA</h5>
                             <p class=""><span class="h6">Direct Patient Care:</span>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1162123094-612x612.jpg')}}" class="card-img-top" alt="..." >
+                        <img src="{{secure_asset('images/nurse8.jpg')}}" class="card-img-top" alt="..." >
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE ALISHBA</h5>
                             <p class=""><span class="h6">Advocacy:</span>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1209863007-612x612.jpg')}}" class="card-img-top" alt="..." >
+                        <img src="{{secure_asset('images/nurse9.jpg')}}" class="card-img-top" alt="..." >
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE NAILA</h5>
                             <p class=""><span class="h6">Research and Innovation: </span>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1421919809-612x612 (1).jpg')}}" class="card-img-top" alt="..." >
+                        <img src="{{secure_asset('images/nurse10.jpg')}}" class="card-img-top" alt="..." >
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE NOOR</h5>
                             <p class=""><span class="h6">Direct Patient Care:</span>
