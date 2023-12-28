@@ -27,7 +27,8 @@ class AppointmentController extends Controller
         $doctorBreakdown = docterData::select('DoctorName', DB::raw('count(*) as count'))
         ->groupBy('DoctorName')
         ->get();
-        return view('/appoint.create', compact('doctorBreakdown'));
+        $doctors = docterData::all();
+        return view('/appoint.create', compact('doctorBreakdown', 'doctors'));
     }
    
 
@@ -47,7 +48,9 @@ class AppointmentController extends Controller
     public function checkEmailValidity(Request $request)
     {
         $email = $request->input('email');
-    
+        $doctors = docterData::all();
+        return view('/appoint.create', compact('doctors'));
+
         $request->validate([
             'email' => 'required|email',
         ], [
