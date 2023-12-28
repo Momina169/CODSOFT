@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Support\Facades\File;
 
 use Illuminate\Database\Seeder;
-use App\Models\docterData;
+use App\Models\DocterData;
 
 class DoctorSeeder extends Seeder
 {
@@ -19,7 +19,7 @@ class DoctorSeeder extends Seeder
         $doctordata = json_decode($json);
 
        collect($doctordata)->each(function($data){
-        docterData::create([
+        DocterData::create([
                 'image' => $data->image,
                 'DoctorName' => $data->DoctorName,
                 'contact' => $data->contact,

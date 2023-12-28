@@ -11,7 +11,7 @@
 
         <div class="row row-cols-1 row-cols-md-5 g-4">
             <div class="col-lg-3">
-                <img src="{{secure_asset('images/'. $doctor->image)}}" alt="" height="">
+                <img src="{{secure_asset('images/'. $doctor->image)}}" alt="" Style="border-radius: 50%;" height="500" width="500">
             </div>
             <div class="col-lg-9 pt-5 mt-5">
                 <div class="text-danger fs-5" style="letter-spacing: 2px;">{{$doctor->speciality}}</div>

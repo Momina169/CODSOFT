@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Appointment;
 use App\Models\Staff;
 use App\Models\Deppartment;
-use App\Models\DocterData;
+use App\Models\docterData;
 use App\Models\checkout;
 use Illuminate\Http\Request;
 use App\Http\Requests\AppointmentRequest;
@@ -24,7 +24,7 @@ class AppointmentController extends Controller
 
     public function getDoctorBreakdown()
     {
-        $doctorBreakdown = DocterData::select('DoctorName', DB::raw('count(*) as count'))
+        $doctorBreakdown = docterData::select('DoctorName', DB::raw('count(*) as count'))
         ->groupBy('DoctorName')
         ->get();
         return response()->json($doctorBreakdown);
