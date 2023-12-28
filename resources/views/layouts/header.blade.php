@@ -14,7 +14,7 @@
                       <div class="col-4">
                           <img src="{{secure_asset('images/logo.png')}}" width="70px" height="70px">
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 mb-0">
                           <b class="align-bottom fs-4 ps-0 mb-0" style="color: #00B4CC;"><i>Medical Haven</i></b>
                       </div>
                   </div>

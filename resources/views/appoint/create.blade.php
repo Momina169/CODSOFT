@@ -175,9 +175,10 @@
                         @endforeach
                     </select>
 
-                    <label for="doctor">Find Doctor</label><br>
+                    <label for="doctor">Select Doctor</label><br>
                     <select id="doctor" name="doctor" class="form-select"><br>
-                        <option value="">Select Doctor</option>
+                        @foreach( $doctors as $doctor)
+                        <option value="{{ $doctor->id }}">{{ $doctor->DoctorName }}</option>
                     </select>
 
                 </div>

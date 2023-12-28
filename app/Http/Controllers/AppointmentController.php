@@ -40,7 +40,8 @@ class AppointmentController extends Controller
     
     public function create()
     {
-        return view('/appoint.create');
+        $doctors = docterData::get();
+        return view('/appoint.create', compact('doctors'));
     }
 
     public function checkEmailValidity(Request $request)
