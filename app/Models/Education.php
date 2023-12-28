@@ -16,7 +16,7 @@ class Education extends Model
         'docter_data_id'
     ];
     public function docterdata(){
-        return $this->belongsto(docterData::class);
+        return $this->belongsto(DocterData::class);
     }
 
     

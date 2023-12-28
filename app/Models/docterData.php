@@ -37,7 +37,7 @@ class DocterData extends Model
 
     public function clinicalInterests()
     {
-        return $this->hasMany(clinicalInterest::class);
+        return $this->hasMany(ClinicalInterest::class);
     }
 
     // department

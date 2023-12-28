@@ -12,7 +12,7 @@ class Schedule extends Model
          'date', 'time' , 'docter_data_id'
     ];
         public function docterdata(){
-            return $this->belongsto(docterData::class);
+            return $this->belongsto(DocterData::class);
         }
     
 }
