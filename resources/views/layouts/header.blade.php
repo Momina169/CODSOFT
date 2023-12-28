@@ -15,7 +15,7 @@
                           <img src="{{secure_asset('images/logo.png')}}" width="70px" height="70px">
                       </div>
                       <div class="col-8">
-                          <b class="align-bottom fs-4 ps-0" style="color: #00B4CC;"><i>Medical Haven</i></b>
+                          <b class="align-bottom fs-4 ps-0 mb-0" style="color: #00B4CC;"><i>Medical Haven</i></b>
                       </div>
                   </div>
               </a>
