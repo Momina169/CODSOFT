@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Appointment;
 use App\Models\Staff;
 use App\Models\Deppartment;
-use App\Models\docterData;
+use App\Models\DocterData;
 use App\Models\checkout;
 use Illuminate\Http\Request;
 use App\Http\Requests\AppointmentRequest;

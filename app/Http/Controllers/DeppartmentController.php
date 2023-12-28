@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Deppartment;
-use App\Models\docterData;
+use App\Models\DocterData;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -24,7 +24,7 @@ class DeppartmentController extends Controller
     // index function
     public function index()
     {
-        $departments = Deppartment::with('docterdata')->get();
+        $departments = Deppartment::with('DocterData')->get();
         return view('/finddoctors.findDoctor', compact('departments'));
     }
 
@@ -32,7 +32,7 @@ class DeppartmentController extends Controller
     public function showDepartments(){
        
         $departments = Deppartment::all();
-        $doctor = docterData::with('deppartments')->get();
+        $doctor = DocterData::with('deppartments')->get();
         return view('/finddoctors.findDoctor', compact('doctor','departments'));
        
     }
