@@ -177,7 +177,7 @@
 
                     <label for="doctor">Select Doctor</label><br>
                     <select id="doctor" name="doctor" class="form-select"><br>
-                        @foreach( $doctors as $doctor)
+                        @foreach( $doctorBreakdown as $doctor)
                         <option value="{{ $doctor->id }}">{{ $doctor->DoctorName }}</option>
                         @endforeach
                     </select>

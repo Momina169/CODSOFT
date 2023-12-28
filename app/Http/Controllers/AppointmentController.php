@@ -27,7 +27,7 @@ class AppointmentController extends Controller
         $doctorBreakdown = docterData::select('DoctorName', DB::raw('count(*) as count'))
         ->groupBy('DoctorName')
         ->get();
-        return response()->json($doctorBreakdown);
+        return view('/appoint.create', compact('doctorBreakdown'));
     }
    
 
@@ -63,13 +63,11 @@ class AppointmentController extends Controller
             ]);
         } else {
             $departmentBreakdown = Deppartment::get();
-            $doctors = docterData::get();
-
+            
             return response()->json([
                 'success' => true,
                 'message' => 'This email address is available.',
                 'departmentBreakdown' => $departmentBreakdown,
-                'doctors' => $doctors,
             ]);
         }
     }
