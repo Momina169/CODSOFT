@@ -11,7 +11,7 @@ use App\Http\Controllers\UserController;
 
 // ======== Frontend Routes ===========
 Route::get('/', function () {
-    return view ('/index');
+    return view ('/');
 })->middleware(['auth', 'verified'])->name('index');
 
 
