@@ -11,10 +11,10 @@
             <a class="navbar-brand" href="{{ route('index') }}">
                 <div class="row">
                     <div class="col-6">
-                        <img src="{{secure_asset('images/logo.png')}}" width="60px" height="60px">
+                        <img src="{{secure_asset('images/logo.png')}}" width="70px" height="70px">
                     </div>
                     <div class="col-6">
-                        <b style="color: #00B4CC;"><i>Medical Haven</i></b>
+                        <b class="align-middle" style="color: #00B4CC;"><i>Medical Haven</i></b>
                     </div>
                 </div>
             </a>
@@ -116,7 +116,7 @@
 
                   </li>
                   <li>
-                <a class="btn btn-outline-danger" href="{{route('appoint.create')}}">Book Appointment</a>
+                <a class="btn btn-danger" href="{{route('appoint.create')}}">Book Appointment</a>
 
                   </li>
 
