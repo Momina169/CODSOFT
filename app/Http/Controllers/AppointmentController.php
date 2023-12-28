@@ -40,8 +40,8 @@ class AppointmentController extends Controller
     
     public function create()
     {
-        $doctors = docterData::get();
-        return view('/appoint.create', compact('doctors'));
+        
+        return view('/appoint.create');
     }
 
     public function checkEmailValidity(Request $request)
@@ -63,11 +63,13 @@ class AppointmentController extends Controller
             ]);
         } else {
             $departmentBreakdown = Deppartment::get();
-    
+            $doctors = docterData::get();
+
             return response()->json([
                 'success' => true,
                 'message' => 'This email address is available.',
                 'departmentBreakdown' => $departmentBreakdown,
+                'doctors' => $doctors,
             ]);
         }
     }
