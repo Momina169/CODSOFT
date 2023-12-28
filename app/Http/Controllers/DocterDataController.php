@@ -43,7 +43,7 @@ class DocterDataController extends Controller
     { 
         request()->validate([
 
-            'email' => 'required|email|unique:doctors'
+            'email' => 'required|email|unique:docter_data'
         ]);
    
         // image
