@@ -1,7 +1,7 @@
 @extends('layouts._layout')
 @section('content')
-    <style>
-        .nurse {
+<style>
+ .nurse {
     background-image: url("secure_asset('images/Best Medical ServicE (Facebook Cover).png')");
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +40,7 @@
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 <div class="col">
                     <div class="card">
-                        <img src="{{secure_asset('images/istockphoto-1426370940-612x612.jpg')" class="card-img-top}}" alt="...">
+                        <img src="{{secure_asset('images/istockphoto-1426370940-612x612.jpg')}}" class="card-img-top}}" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-danger">NURSE AMNA</h5>
                             <p class=""><span class="h6">Direct Patient Care:</span>
