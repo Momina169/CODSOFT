@@ -12,6 +12,6 @@ class ClinicalInterest extends Model
     protected $fillable = [ 'clinicalInterest', 'docter_data_id'];
     
     public function docterdata(){
-        return $this->belongsto(DocterData::class);
+        return $this->belongsto(docterData::class);
     }
 }
