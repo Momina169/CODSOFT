@@ -179,8 +179,8 @@
 
                      <div id=doctors-list>
                          <div class="card my-2" style="width: 18rem;">
-                             <a href="{'doctor/' . $doc->id}}"><img class="card-img-top"
-                                     src="{{ asset('images/'.$doc->image) }}" alt="Card image cap"></a>
+                             <a href="#"><img class="card-img-top"
+                                     src="{{ asset('images/'.$doc->image) }}" alt="doctor"></a>
 
                              <div class="card-body">
                                  <h5 class="card-title">{{$doc->speciality}}</h5>

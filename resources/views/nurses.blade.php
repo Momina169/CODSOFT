@@ -34,7 +34,7 @@
                     health, preventing illness, and providing <br> support during recovery.</p>
         </div>
     </section>
-    <!--/////////////////////////////////////////////////////////-->
+
     <section class="detail">
         <div class="container mt-5">
             <div class="row row-cols-1 row-cols-md-5 g-4">
@@ -107,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <!--/////////////////////////////////////////////////////////////////////////-->
+           
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 <div class="col">
                     <div class="card">
@@ -180,7 +180,7 @@
             </div>
         </div>
     </section>
-    <!--///////////////////////////////////////////////////////////////////////////////-->
+
   
 
    @endSection

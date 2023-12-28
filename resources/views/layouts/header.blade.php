@@ -45,6 +45,8 @@
                           </li>
 
                           <li><a class="dropdown-item" href="{{route('vision')}}">Our Vision</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="{{route('firstlearnmore')}}">Learn More...</a></li>
 
                       </ul>
                   </li>
@@ -56,11 +58,6 @@
                           Our Team
                       </a>
                       <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Doctors</a></li>
-                          <li>
-                              <hr class="dropdown-divider">
-                          </li>
-
                           <li><a class="dropdown-item" href="{{route('nurses')}}">Nurses</a></li>
                           <li>
                               <hr class="dropdown-divider">
