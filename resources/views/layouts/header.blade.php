@@ -11,11 +11,11 @@
               <!-- Logo on the left -->
               <a class="navbar-brand" href="{{ route('index') }}">
                   <div class="row">
-                      <div class="col-6">
+                      <div class="col-4">
                           <img src="{{secure_asset('images/logo.png')}}" width="70px" height="70px">
                       </div>
-                      <div class="col-6">
-                          <b class="align-bottom fs-4" style="color: #00B4CC;"><i>Medical Haven</i></b>
+                      <div class="col-8">
+                          <b class="align-bottom fs-4 ps-0" style="color: #00B4CC;"><i>Medical Haven</i></b>
                       </div>
                   </div>
               </a>
