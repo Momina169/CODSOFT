@@ -115,6 +115,10 @@
                       </ul>
 
                   </li>
+                  <li>
+                <a class="btn btn-outline-danger" href="{{route('appoint.create')}}">Book Appointment</a>
+
+                  </li>
 
 
               </ul>
